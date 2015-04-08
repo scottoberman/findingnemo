@@ -16,14 +16,26 @@ SOURCES += main.cpp\
         mainwindow.cpp \
     dreamvacation.cpp \
     majorleaguestadiums.cpp \
-    displaytrip.cpp
+    displaytrip.cpp \
+    purchasesouv.cpp \
+    total.cpp \
+    adminmenu.cpp \
+    loginadmin.cpp
 
 HEADERS  += mainwindow.h \
     dreamvacation.h \
     majorleaguestadiums.h \
-    displaytrip.h
+    displaytrip.h \
+    purchasesouv.h \
+    total.h \
+    adminmenu.h \
+    loginadmin.h
 
 FORMS    += mainwindow.ui \
     dreamvacation.ui \
     majorleaguestadiums.ui \
-    displaytrip.ui
+    displaytrip.ui \
+    purchasesouv.ui \
+    total.ui \
+    adminmenu.ui \
+    loginadmin.ui

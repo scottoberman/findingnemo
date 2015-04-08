@@ -9,6 +9,7 @@
 #include <iomanip>
 #include "majorleaguestadiums.h"
 #include "dreamvacation.h"
+
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
@@ -33,4 +34,22 @@ void MainWindow::on_pushButton_2_clicked()
     dreamvacation *dream = new dreamvacation;
     this->close();
     dream->show();
+}
+
+void MainWindow::on_pushButton_3_clicked()
+{
+    // If user wants clicks on "Quit" it will give a confirmation message
+    QMessageBox msgBox;
+    // Options given are "Yes" to quit and "no" to stay.
+    msgBox.setStandardButtons(QMessageBox::Yes| QMessageBox::No);
+    msgBox.setText("Are you sure you want to quit?");
+    // Stylize the confirmation box
+    //msgBox.setStyleSheet("QMessageBox{background:#333;}QLabel{color: #fff;};"
+    //"QPushButton{background:#eee;}");
+    msgBox.setWindowTitle("Quit");
+    // If yes, it will write to file then quit
+    if (msgBox.exec() == QMessageBox::Yes)
+    {
+        QApplication::quit();
+    }
 }
