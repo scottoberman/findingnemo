@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="13.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>480</x>
+      <y>300</y>
+      <w>300</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>Class: Admin
+--
+-username: string
+-password: string
+--
++SetInputFileDirectory(const string): void
++SetOutputFileDirectory(const string): void
++SetLoginInfo(const string, const string): void
++SetSouvenir(const string, const double): void
++SetStadium(const string, Vertex*): void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>260</x>
+      <y>510</y>
+      <w>300</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>Class: Vertex (AKA Stadium)
+--
++name: string
+-adjVertices: vector&lt;Vertex*&gt;
+-connections: vector&lt;Edge*&gt;
+--
++AddConnection(Vertex*, int): void
++RemoveConnection(Edge*): void
++RemoveConnection(Vertex*): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>710</x>
+      <y>510</y>
+      <w>300</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>Class: Edge
+--
+-weight: int
+-vertices: Vertex*[2]
+--
++Edge(Vertex*, Vertex*, int): void
++SetVertices(Vertex*, Vertex*, int): void
++GetVertices(): void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>550</x>
+      <y>560</y>
+      <w>180</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+</panel_attributes>
+    <additional_attributes>10.0;20.0;160.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>550</x>
+      <y>560</y>
+      <w>180</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+</panel_attributes>
+    <additional_attributes>160.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+</diagram>
