@@ -4,8 +4,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>480</x>
-      <y>300</y>
+      <x>300</x>
+      <y>330</y>
       <w>300</w>
       <h>150</h>
     </coordinates>
@@ -25,8 +25,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>260</x>
-      <y>510</y>
+      <x>300</x>
+      <y>540</y>
       <w>300</w>
       <h>140</h>
     </coordinates>
@@ -44,8 +44,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>710</x>
-      <y>510</y>
+      <x>750</x>
+      <y>540</y>
       <w>300</w>
       <h>120</h>
     </coordinates>
@@ -63,8 +63,8 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>550</x>
-      <y>560</y>
+      <x>590</x>
+      <y>590</y>
       <w>180</w>
       <h>40</h>
     </coordinates>
@@ -75,13 +75,51 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>550</x>
-      <y>560</y>
+      <x>590</x>
+      <y>590</y>
       <w>180</w>
       <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 </panel_attributes>
     <additional_attributes>160.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>810</x>
+      <y>340</y>
+      <w>300</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>Class: User
+--
+-username: string
+-password: string
+--
++TakeFullTrip(): void
++TakeCustomTrip(Vertex*, Vertex*): void
++TakeCustomTrip(vector&lt;Vertex*&gt;: void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>300</x>
+      <y>730</y>
+      <w>300</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>Class: Trip (AKA Graph)
+--
+-vertices: vector&lt;Vertex*&gt;
+-edges: vector&lt;Edge*&gt;
+--
++AddVertex(Vertex*, int): void
++RemoveVertex(Vertex*): void
++PrimsAlgorithm(Vertex*): void
++DijkstrasAlgorithm(Vertex*, Vertex*): void</panel_attributes>
+    <additional_attributes/>
   </element>
 </diagram>
