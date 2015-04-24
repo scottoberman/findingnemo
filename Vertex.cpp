@@ -15,9 +15,15 @@ Vertex::Vertex()
 	dijkstraPrevVertex = NULL;
 }
 
-Vertex::Vertex(const string NAME)
+Vertex::Vertex(const string STADIUM_NAME, const string TEAM_NAME, const string ADDRESS, const string CITY_STATE_ZIP, const string PHONE_NUMBER, const string DATE_OPENED, const int CAPACITY)
 {
-	name = NAME;
+	info.stadiumName = STADIUM_NAME;
+	info.teamName = TEAM_NAME;
+	info.address = ADDRESS;
+	info.cityStateZip = CITY_STATE_ZIP;
+	info.phoneNumber = PHONE_NUMBER;
+	info.dateOpened = DATE_OPENED;
+	info.capacity = CAPACITY;
 	dijkstraWeight = 9999;
 	dijkstraPrevVertex = NULL;
 }
@@ -34,12 +40,12 @@ void Vertex::OutputAllConnections()
 	vector<Edge*>::const_iterator connectionsIterator = connections.begin();
 	int currentConnection = 0;
 
-	cout << name << " is connected to: " << endl;
+	cout << info.stadiumName << " is connected to: " << endl;
 
 	while (connectionsIterator != connections.end())
 	{
-		cout << (*connectionsIterator)->GetOtherVertex(this)->name
-			 << " Distance between vertices is " << (*connectionsIterator)->weight << endl;
+		cout << (*connectionsIterator)->GetOtherVertex(this)->info.stadiumName
+			<< " Distance between vertices is " << (*connectionsIterator)->weight << endl;
 		connectionsIterator++;
 
 	}
@@ -66,9 +72,9 @@ bool Vertex::HasBeenVisited(vector<Vertex*> visitedVertices)
 	vector<Vertex*>::const_iterator visitedVerticesIterator = visitedVertices.begin();
 	bool hasBeenVisited = false;
 
-	while(!hasBeenVisited && visitedVerticesIterator != visitedVertices.end())
+	while (!hasBeenVisited && visitedVerticesIterator != visitedVertices.end())
 	{
-		if (name == (*visitedVerticesIterator)->name)
+		if (info.stadiumName == (*visitedVerticesIterator)->info.stadiumName)
 		{
 			hasBeenVisited = true;
 		}
