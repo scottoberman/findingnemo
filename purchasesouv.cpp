@@ -13,9 +13,9 @@ purchasesouv::~purchasesouv()
     delete ui;
 }
 
-void purchasesouv::on_pushButton_clicked()
-{
-    total *tot = new total;
-    this->reject();
-    tot->show();
-}
+//void purchasesouv::on_pushButton_clicked()
+//{
+//    total *tot = new total;
+//    this->reject();
+//    tot->show();
+//}
