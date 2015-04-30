@@ -7,37 +7,39 @@
 #include <ios>
 #include <map>
 #include <queue>
+#include <string>
 
 struct stadiumInfo {
-	//setting all values to default NULL values in construction of struct
-	std::string stadiumName      = "";
-	std::string streetAddress    = "";
-	std::string cityStateZip     = "";
-	std::string phoneNumber		 = "";;
-	std::string dateOpened       = "";;
-	std::string seatingCapacity  = "";;
-	bool        nationalLeague   = false;
-	bool        americanLeague   = false;
-	bool        astroturf        = false;
+    //setting all values to default NULL values in construction of struct
+    std::string stadiumName      ;
+    std::string streetAddress    ;
+    std::string cityStateZip     ;
+    std::string phoneNumber		 ;
+    std::string dateOpened       ;
+    std::string seatingCapacity  ;
+    bool        nationalLeague   ;
+    bool        americanLeague   ;
+    bool        astroturf        ;
 };
 
 class FileManager {
 public:
-	FileManager();
-	virtual ~FileManager();
+    FileManager();
+    virtual ~FileManager();
 
 //ACCESSORS////////////////////////////////////////////////////////////////////
-	std::string printAll();
-	std::queue<std::string> getAmericanLeagueStadiums();
-	std::queue<std::string> getNationalLeagueStadiums();
-	std::queue<std::string> getAllStadiums();
-	std::queue<std::string> getAstroturfStadiums();//not implemented yet
+    std::string printAll();
+    std::queue<std::string> getAmericanLeagueStadiums();
+    std::queue<std::string> getNationalLeagueStadiums();
+    std::queue<std::string> getAllStadiums();
+    std::queue<std::string> getAstroturfStadiums();//not implemented yet
+    void getAllStadiumsVector(std::vector<std::string> *returnVec);
 
 //MUTATORS/////////////////////////////////////////////////////////////////////
 
 
 private:
-	std::map<std::string, stadiumInfo> listOfStadiums;
+    std::map<std::string, stadiumInfo> listOfStadiums;
 
 };
 

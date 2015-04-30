@@ -20,7 +20,8 @@ SOURCES += main.cpp\
     purchasesouv.cpp \
     total.cpp \
     adminmenu.cpp \
-    loginadmin.cpp
+    loginadmin.cpp \
+    filemanager.cpp
 
 HEADERS  += mainwindow.h \
     dreamvacation.h \
@@ -29,7 +30,8 @@ HEADERS  += mainwindow.h \
     purchasesouv.h \
     total.h \
     adminmenu.h \
-    loginadmin.h
+    loginadmin.h \
+    filemanagerheader.h
 
 FORMS    += mainwindow.ui \
     dreamvacation.ui \
@@ -39,3 +41,6 @@ FORMS    += mainwindow.ui \
     total.ui \
     adminmenu.ui \
     loginadmin.ui
+
+DISTFILES += \
+    baseballstadiuminformation.txt

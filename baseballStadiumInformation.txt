@@ -1,32 +1,32 @@
 Angels Stadium of Anaheim
 Los Angeles Angels of Anaheim
-2000 E Gene Autry Way, 
+2000 E Gene Autry Way,
 Anaheim, CA 92806
 (714)940-2000
-Opened – April 19, 1966
-Capacity – 45,483
+Opened â€“ April 19, 1966
+Capacity â€“ 45,483
 NationalLeague - NO
 AmericanLeague - YES
 Astroturf - N/A
 
 Comerica Park
 Detroit Tigers
-2100 Woodward Ave, 
+2100 Woodward Ave,
 Detroit, MI 48201
-(313) 962-4000 
-Opened – April 11, 2000
-Capacity – 41,681
+(313) 962-4000
+Opened â€“ April 11, 2000
+Capacity â€“ 41,681
 NationalLeague - NO
 AmericanLeague - YES
 Astroturf - N/A
 
 Fenway Park
 Boston Red Sox
-4 Yawkey Way, 
+4 Yawkey Way,
 Boston, MA 02215
-(877) 733-7699 
-Opened – April 20, 1912
-Capacity – 37,499 (night) & 37,071 (day)
+(877) 733-7699
+Opened â€“ April 20, 1912
+Capacity â€“ 37,499 (night) & 37,071 (day)
 NationalLeague - NO
 AmericanLeague - YES
 Astroturf - N/A
@@ -35,9 +35,9 @@ Globe Life Park in Arlington
 Texas Rangers
 1000 Ballpark Way,
 Arlington, TX 76011
-(817) 273-5222 
-Opened – April 1, 1994
-Capacity – 48,114
+(817) 273-5222
+Opened â€“ April 1, 1994
+Capacity â€“ 48,114
 NationalLeague - NO
 AmericanLeague - YES
 Astroturf - N/A
@@ -47,8 +47,8 @@ Kansas City Royals
 1 Royal Way
 Kansas City, MO 64129
 (816) 921-8000
-Opened – April 10, 1973
-Capacity – 37,903 
+Opened â€“ April 10, 1973
+Capacity â€“ 37,903
 NationalLeague - NO
 AmericanLeague - YES
 Astroturf - N/A
@@ -63,7 +63,7 @@ Capacity - 42,060
 NationalLeague - NO
 AmericanLeague - YES
 Astroturf - N/A
- 
+
 O.co Coliseum
 Oakland Athletics
 7000 Coliseum Way
@@ -306,7 +306,7 @@ NationalLeague - YES
 AmericanLeague - NO
 Astroturf - N/A
 
-Turner Field 
+Turner Field
 Atlanta Braves
 755 Hank Aaron Drive
 Atlanta, GA 30315
