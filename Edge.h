@@ -10,8 +10,15 @@
 #ifndef EDGE_H_
 #define EDGE_H_
 
-#include "header.h"
+#include <iostream>
+#include <iomanip>
+#include <sstream>
+#include <stack>
+#include <string>
+#include <vector>
 #include "Vertex.h"
+
+using namespace std;
 
 class Vertex;
 

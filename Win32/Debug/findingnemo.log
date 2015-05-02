@@ -1,0 +1,57 @@
+﻿Build started 5/2/2015 3:42:42 AM.
+     1>Project "C:\Users\Scott\Documents\GitHub\findingnemo\findingnemo.vcxproj" on node 2 (Build target(s)).
+     1>CustomBuild:
+         Moc'ing adminmenu.h...
+         Moc'ing displaytrip.h...
+         Moc'ing dreamvacation.h...
+         Moc'ing loginadmin.h...
+         Moc'ing mainwindow.h...
+         Moc'ing majorleaguestadiums.h...
+         Moc'ing purchasesouv.h...
+         Moc'ing total.h...
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I. /IC:\Qt\5.4\msvc2013\include /IC:\Qt\5.4\msvc2013\include\QtWidgets /IC:\Qt\5.4\msvc2013\include\QtGui /IC:\Qt\5.4\msvc2013\include\QtANGLE /IC:\Qt\5.4\msvc2013\include\QtCore /Idebug /I. /I"C:\Qt\5.4\msvc2013\mkspecs\win32-msvc2013" /I.\GeneratedFiles /Zi /nologo /W3 /WX- /Od /Oy- /D _WINDOWS /D UNICODE /D WIN32 /D QT_WIDGETS_LIB /D QT_GUI_LIB /D QT_CORE_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"Win32\Debug\\" /Fd"Win32\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt -Zm200 -w34100 -w34189 adminmenu.cpp Debug\moc_adminmenu.cpp Debug\moc_displaytrip.cpp Debug\moc_dreamvacation.cpp Debug\moc_loginadmin.cpp Debug\moc_mainwindow.cpp Debug\moc_majorleaguestadiums.cpp Debug\moc_purchasesouv.cpp Debug\moc_total.cpp Edge.cpp filemanager.cpp graph.cpp loginadmin.cpp Vertex.cpp
+         adminmenu.cpp
+         moc_adminmenu.cpp
+         moc_displaytrip.cpp
+         moc_dreamvacation.cpp
+         moc_loginadmin.cpp
+         moc_mainwindow.cpp
+         moc_majorleaguestadiums.cpp
+         moc_purchasesouv.cpp
+         moc_total.cpp
+         Edge.cpp
+         filemanager.cpp
+         graph.cpp
+         loginadmin.cpp
+         Vertex.cpp
+     1>Vertex.cpp(35): warning C4189: 'currentConnection' : local variable is initialized but not referenced
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"debug\\findingnemo.exe" /NOLOGO /LIBPATH:C:\Qt\5.4\msvc2013\lib /LIBPATH:C:\Qt\5.4\msvc2013\lib /LIBPATH:C:\Qt\5.4\msvc2013\lib C:\Qt\5.4\msvc2013\lib\qtmaind.lib shell32.lib C:\Qt\5.4\msvc2013\lib\Qt5Cored.lib C:\Qt\5.4\msvc2013\lib\Qt5Widgetsd.lib C:\Qt\5.4\msvc2013\lib\Qt5Guid.lib C:\Qt\5.4\msvc2013\lib\Qt5Cored.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"debug\findingnemo.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /MACHINE:X86 /SAFESEH "/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" Win32\Debug\adminmenu.obj
+         Win32\Debug\moc_adminmenu.obj
+         Win32\Debug\moc_displaytrip.obj
+         Win32\Debug\moc_dreamvacation.obj
+         Win32\Debug\moc_loginadmin.obj
+         Win32\Debug\moc_mainwindow.obj
+         Win32\Debug\moc_majorleaguestadiums.obj
+         Win32\Debug\moc_purchasesouv.obj
+         Win32\Debug\moc_total.obj
+         Win32\Debug\displaytrip.obj
+         Win32\Debug\dreamvacation.obj
+         Win32\Debug\Edge.obj
+         Win32\Debug\filemanager.obj
+         Win32\Debug\graph.obj
+         Win32\Debug\loginadmin.obj
+         Win32\Debug\main.obj
+         Win32\Debug\mainwindow.obj
+         Win32\Debug\majorleaguestadiums.obj
+         Win32\Debug\purchasesouv.obj
+         Win32\Debug\total.obj
+         Win32\Debug\Vertex.obj
+         findingnemo.vcxproj -> C:\Users\Scott\Documents\GitHub\findingnemo\debug\findingnemo.exe
+     1>Done Building Project "C:\Users\Scott\Documents\GitHub\findingnemo\findingnemo.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:11.77

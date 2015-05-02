@@ -163,7 +163,9 @@
     </ClCompile>
     <ClCompile Include="displaytrip.cpp" />
     <ClCompile Include="dreamvacation.cpp" />
+    <ClCompile Include="Edge.cpp" />
     <ClCompile Include="filemanager.cpp" />
+    <ClCompile Include="graph.cpp" />
     <ClCompile Include="loginadmin.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="mainwindow.cpp" />
@@ -194,8 +196,10 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="total.cpp" />
+    <ClCompile Include="Vertex.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Edge.h" />
     <ClInclude Include="GeneratedFiles\ui_adminmenu.h" />
     <ClInclude Include="GeneratedFiles\ui_displaytrip.h" />
     <ClInclude Include="GeneratedFiles\ui_dreamvacation.h" />
@@ -204,6 +208,8 @@
     <ClInclude Include="GeneratedFiles\ui_majorleaguestadiums.h" />
     <ClInclude Include="GeneratedFiles\ui_purchasesouv.h" />
     <ClInclude Include="GeneratedFiles\ui_total.h" />
+    <ClInclude Include="Graph.h" />
+    <ClInclude Include="Vertex.h" />
     <CustomBuild Include="adminmenu.h">
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
 if errorlevel 1 goto VCEnd
