@@ -10,13 +10,15 @@ majorleaguestadiums::majorleaguestadiums(QWidget *parent) :
     ui->setupUi(this);
     FileManager fmanager;
     std::queue<std::string> stadiums = fmanager.getAllStadiums();
+    int sizeStadiums = stadiums.size();
     // Go through each winery and put them in a list with a checkbox next to it
-    for(int i = 0; i<stadiums.size();i++)
+    for(int i = 0; i<sizeStadiums;i++)
     {
         // Get item from winery list vector
-        QListWidgetItem* item = new QListWidgetItem(QString::fromStdString(stadiums.front()), ui->listWidget);
-        item->setFlags(item->flags() | Qt::ItemIsUserCheckable); // set checkable flag
-        item->setCheckState(Qt::Unchecked); // AND initialize check state
+        if (stadiums.front()!= "Los Angeles Angels of Anaheim")
+        {
+            ui->comboBox->addItem(QString::fromStdString(stadiums.front()));
+        }
         stadiums.pop();
     }
 }
