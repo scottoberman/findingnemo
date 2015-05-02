@@ -13,29 +13,18 @@
 #include "header.h"
 #include "Edge.h"
 
-struct Info
-{
-	string stadiumName;
-	string teamName;
-	string address;
-	string cityStateZip;
-	string phoneNumber;
-	string dateOpened;
-	int capacity;
-};
-
 class Edge;
 
 class Vertex
 {
 public:
-	Info info;
+	string name;
 	vector<Edge*> connections;
 	int dijkstraWeight;
 	Vertex* dijkstraPrevVertex;
 
 	Vertex();
-	Vertex(const string STADIUM_NAME, const string TEAM_NAME, const string ADDRESS, const string CITY_STATE_ZIP, const string PHONE_NUMBER, const string DATE_OPENED, const int CAPACITY);
+	Vertex(const string NAME);
 
 	void AddConnection(Edge* connection);
 	Vertex* GetOtherVertex(Edge* connection);

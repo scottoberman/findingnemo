@@ -9,8 +9,8 @@
 
 #include "Graph.h"
 
-// Sets up an edge between two vertices.
-void Graph::SetEdge(Vertex* vertex1, Vertex* vertex2, const int WEIGHT)
+// Sets up two vertices and an edge between them then adds them to the graph.
+void Graph::SetVertices(Vertex* vertex1, Vertex* vertex2, const int WEIGHT)
 {
 	bool vertexFound = false;
 	bool otherVertexFound = false;
@@ -22,11 +22,11 @@ void Graph::SetEdge(Vertex* vertex1, Vertex* vertex2, const int WEIGHT)
 	while (!vertexFound && searchIterator != vertices.end())
 	{
 		// If any vertex already exists in the graph, store it temporarily for later.
-		if ((*searchIterator)->info.stadiumName == vertex1->info.stadiumName || (*searchIterator)->info.stadiumName == vertex2->info.stadiumName)
+		if ((*searchIterator)->name == vertex1->name || (*searchIterator)->name == vertex2->name)
 		{
 			vertexFound = true;
 
-			if ((*searchIterator)->info.stadiumName == vertex1->info.stadiumName)
+			if ((*searchIterator)->name == vertex1->name)
 			{
 				vertexStillBeingSought = vertex2;
 			}
@@ -38,7 +38,7 @@ void Graph::SetEdge(Vertex* vertex1, Vertex* vertex2, const int WEIGHT)
 			// Look for the other vertex to check if two already existing vertices will be connected
 			while (!otherVertexFound && searchIterator != vertices.end())
 			{
-				if ((*searchIterator)->info.stadiumName == vertexStillBeingSought->info.stadiumName || (*searchIterator)->info.stadiumName == vertexStillBeingSought->info.stadiumName)
+				if ((*searchIterator)->name == vertexStillBeingSought->name || (*searchIterator)->name == vertexStillBeingSought->name)
 				{
 					otherVertexFound = true;
 				}
@@ -50,7 +50,7 @@ void Graph::SetEdge(Vertex* vertex1, Vertex* vertex2, const int WEIGHT)
 
 			if (!otherVertexFound)
 			{
-				if (vertexStillBeingSought->info.stadiumName == vertex1->info.stadiumName)
+				if (vertexStillBeingSought->name == vertex1->name)
 				{
 					vertices.push_back(vertex1);
 				}
@@ -68,7 +68,7 @@ void Graph::SetEdge(Vertex* vertex1, Vertex* vertex2, const int WEIGHT)
 
 	}
 
-	// If the vertices being added don't yet exist, add an isolated edge. SHOULDNT HAPPEN
+	// If the vertices being added don't yet exist, add an isolated edge.
 	if (!vertexFound)
 	{
 		vertices.push_back(vertex1);
@@ -82,8 +82,8 @@ void Graph::SetEdge(Vertex* vertex1, Vertex* vertex2, const int WEIGHT)
 
 }
 
-// Sets up an edge between two vertices.
-void Graph::SetEdge(const string VERTEX_1_NAME, const string VERTEX_2_NAME, const int WEIGHT)
+// Sets up two vertices and an edge between them with just the names of each vertex and the weight of their edge.
+void Graph::SetVertices(const string VERTEX_1_NAME, const string VERTEX_2_NAME, const int WEIGHT)
 {
 	vector<Vertex*>::const_iterator verticesIterator = vertices.begin();
 
@@ -95,12 +95,12 @@ void Graph::SetEdge(const string VERTEX_1_NAME, const string VERTEX_2_NAME, cons
 
 	while ((!vertex1Found || !vertex2Found) && verticesIterator != vertices.end())
 	{
-		if ((*verticesIterator)->info.stadiumName == VERTEX_1_NAME)
+		if ((*verticesIterator)->name == VERTEX_1_NAME)
 		{
 			vertex1 = *verticesIterator;
 			vertex1Found = true;
 		}
-		else if ((*verticesIterator)->info.stadiumName == VERTEX_2_NAME)
+		else if ((*verticesIterator)->name == VERTEX_2_NAME)
 		{
 			vertex2 = *verticesIterator;
 			vertex2Found = true;
@@ -108,18 +108,17 @@ void Graph::SetEdge(const string VERTEX_1_NAME, const string VERTEX_2_NAME, cons
 		verticesIterator++;
 	}
 
-	// THESE TWO IFS ARE NOT NECESSARY
-	//if (!vertex1Found)
-	//{
-	//	vertex1 = new Vertex(VERTEX_1_NAME);
-	//}
+	if (!vertex1Found)
+	{
+		vertex1 = new Vertex(VERTEX_1_NAME);
+	}
 
-	//if (!vertex2Found)
-	//{
-	//	vertex2 = new Vertex(VERTEX_2_NAME);
-	//}
+	if (!vertex2Found)
+	{
+		vertex2 = new Vertex(VERTEX_2_NAME);
+	}
 
-	SetEdge(vertex1, vertex2, WEIGHT);
+	SetVertices(vertex1, vertex2, WEIGHT);
 }
 
 // Outputs the edges belonging to every vertex of the graph.
@@ -135,9 +134,24 @@ void Graph::OutputAllConnections()
 
 
 
-void Graph::SetVertex(const string STADIUM_NAME, const string TEAM_NAME, const string ADDRESS, const string CITY_STATE_ZIP, const string PHONE_NUMBER, const string DATE_OPENED, const int CAPACITY)
+void Graph::AddVertex(Vertex* vertex)
 {
-	vertices.push_back(new Vertex(STADIUM_NAME, TEAM_NAME, ADDRESS, CITY_STATE_ZIP, PHONE_NUMBER, DATE_OPENED, CAPACITY));
+	vector<Vertex*>::const_iterator verticiesIterator = vertices.begin();
+	bool found = false;
+
+	while (!found && verticiesIterator != vertices.end())
+	{
+		if ((*verticiesIterator) == vertex)
+		{
+			found = true;
+		}
+	}
+
+	if (!found)
+	{
+		vertices.push_back(vertex);
+		cout << endl << "adding " << vertex->name << endl;
+	}
 }
 
 void Graph::DepthFirstSearch(Vertex* startVertex)
@@ -162,7 +176,7 @@ void Graph::DepthFirstSearch(Vertex* startVertex)
 	vertexToMoveToMaybe = (*connectionsIterator)->GetOtherVertex(startVertex);
 	visitedVertices.push_back(activeVertex);
 
-	cout << "Beginning Depth-First-Search at " << startVertex->info.stadiumName << endl;
+	cout << "Beginning Depth-First-Search at " << startVertex->name << endl;
 
 	// While there are parents to go back to incase of running out of never visited verices
 	while (parentVertices.size() != 0)
@@ -181,7 +195,7 @@ void Graph::DepthFirstSearch(Vertex* startVertex)
 					vertexToMoveTo = vertexToMoveToMaybe;
 					shortestEdge = (*connectionsIterator);
 				}
-
+				
 			}
 			// Else, go onto the next vertex attached to the ACTIVE vertex and see if the DFS can move through that.
 			else
@@ -190,13 +204,13 @@ void Graph::DepthFirstSearch(Vertex* startVertex)
 			}
 			connectionsIterator++;
 
-
+			
 		}
 
 		// If the DFS can move through a never visited vertex, do so.
 		if (canMoveForward)
 		{
-			cout << "Moving forwards  along DISCOVERY edge from " << activeVertex->info.stadiumName << " to " << vertexToMoveTo->info.stadiumName << endl;
+			cout << "Moving forwards  along DISCOVERY edge from " << activeVertex->name << " to " << vertexToMoveTo->name << endl;
 			activeVertex = vertexToMoveTo;
 			visitedVertices.push_back(activeVertex);
 			parentVertices.push(activeVertex);
@@ -208,15 +222,15 @@ void Graph::DepthFirstSearch(Vertex* startVertex)
 		// Else if there is no discovery edge to move through, move back to the most recent parent vertex.
 		else if (parentVertices.size() > 1)
 		{
-			cout << "Moving backwards along DISCOVERY edge from " << activeVertex->info.stadiumName;
+			cout << "Moving backwards along DISCOVERY edge from " << activeVertex->name;
 			parentVertices.pop();
 			activeVertex = parentVertices.top();
-			cout << " to " << activeVertex->info.stadiumName << endl;
+			cout << " to " << activeVertex->name << endl;
 			connectionsIterator = parentVertices.top()->connections.begin();
 			vertexToMoveToMaybe = activeVertex->GetOtherVertex(*connectionsIterator);
 
 			shortestEdge = NULL;
-
+			
 		}
 		// Else, (if there are no discovery edges left and every vertex has been explored, end the search).
 		else
@@ -238,7 +252,7 @@ void Graph::DepthFirstSearch(const string START_VERTEX_NAME)
 
 	while (!found && vertexIterator != vertices.end())
 	{
-		if ((*vertexIterator)->info.stadiumName == START_VERTEX_NAME)
+		if ((*vertexIterator)->name == START_VERTEX_NAME)
 		{
 			found = true;
 		}
@@ -282,7 +296,7 @@ void Graph::DijkstrasAlgorithm(Vertex* startVertex, Vertex* endVertex)
 	startVertex->dijkstraWeight = 0; // CHECK THIS LATER K
 
 	// While the end vertex has not yet been visited, keep checking for shortest distance to end vertex.
-	while (!endVertex->HasBeenVisited(visitedVertices))
+	while (visitedVertices.size() != vertices.size())
 	{
 		// While not every single edge of this vertex has been assigned a dijkstra weight, keep checking weight of each edge
 		while (activeConnection != activeVertex->connections.end())
@@ -302,7 +316,7 @@ void Graph::DijkstrasAlgorithm(Vertex* startVertex, Vertex* endVertex)
 
 		visitedVertices.push_back(activeVertex);
 		nextEdge = activeVertex->connections.begin();
-		if (!endVertex->HasBeenVisited(visitedVertices))
+		if (visitedVertices.size() != vertices.size())
 		{
 			while (nextEdge != activeVertex->connections.end() && (*nextEdge)->GetOtherVertex(activeVertex)->HasBeenVisited(visitedVertices))
 			{
@@ -311,18 +325,18 @@ void Graph::DijkstrasAlgorithm(Vertex* startVertex, Vertex* endVertex)
 			activeVertex = (*nextEdge)->GetOtherVertex(activeVertex);
 			activeConnection = activeVertex->connections.begin();
 		}
-
+		
 	}
 
 	Vertex* outputVertex = endVertex;
 
-	cout << "Outputting shortest path from " << startVertex->info.stadiumName << " to " << endVertex->info.stadiumName << ":" << endl;
+	cout << "Outputting shortest path from " << startVertex->name << " to " << endVertex->name << ":" << endl;
 	while (outputVertex != startVertex)
 	{
-		cout << outputVertex->info.stadiumName << endl;
+		cout << outputVertex->name << endl;
 		outputVertex = outputVertex->dijkstraPrevVertex;
 	}
-	cout << outputVertex->info.stadiumName << endl;
+	cout << outputVertex->name << endl;
 	cout << "Distance traveled is: " << endVertex->dijkstraWeight << endl;
 
 }
@@ -339,18 +353,18 @@ void Graph::DijkstrasAlgorithm(const string START_VERTEX_NAME, const string END_
 
 	while ((!foundStart || !foundEnd) && vertexIterator != vertices.end())
 	{
-		if ((*vertexIterator)->info.stadiumName == START_VERTEX_NAME)
+		if ((*vertexIterator)->name == START_VERTEX_NAME)
 		{
 			foundStart = true;
 			startVertex = (*vertexIterator);
 		}
-		else if ((*vertexIterator)->info.stadiumName == END_VERTEX_NAME)
+		else if ((*vertexIterator)->name == END_VERTEX_NAME)
 		{
 			foundEnd = true;
 			endVertex = (*vertexIterator);
 		}
 
-		vertexIterator++;
+			vertexIterator++;
 
 	}
 
@@ -367,7 +381,7 @@ void Graph::PrimsAlgorithm(const string START_VERTEX_NAME)
 
 	while (!foundStart && vertexIterator != vertices.end())
 	{
-		if ((*vertexIterator)->info.stadiumName == START_VERTEX_NAME)
+		if ((*vertexIterator)->name == START_VERTEX_NAME)
 		{
 			foundStart = true;
 			startVertex = (*vertexIterator);
@@ -413,7 +427,7 @@ void Graph::PrimsAlgorithm(Vertex* startVertex)
 				connectionsIterator++;
 			}
 			vertexIterator++;
-
+			
 		}
 
 		visitedVertices.push_back(connectionToMoveAcross->GetOtherVertex(activeVertex));
@@ -431,7 +445,7 @@ void Graph::PrimsAlgorithm(Vertex* startVertex)
 	cout << "Outputting MST: " << endl;
 	while (connectionsIterator != connectionsToTake.end())
 	{
-		cout << (*connectionsIterator)->vertices[0]->info.stadiumName << " connected to " << (*connectionsIterator)->vertices[1]->info.stadiumName << endl;
+		cout << (*connectionsIterator)->vertices[0]->name << " connected to " << (*connectionsIterator)->vertices[1]->name << endl;
 		connectionsIterator++;
 	}
 	cout << "Distance traveled is: " << totalDistance << endl;

@@ -22,10 +22,11 @@ public:
 	vector<Edge*> edges;
 	vector<Vertex*> vertices;
 
-	void SetEdge(Vertex* vertex1, Vertex* vertex2, const int WEIGHT);
-	void SetEdge(const string VERTEX1, const string VERTEX2, const int WEIGHT);
+	// MAYBE WHEN PUSHING BACK ELEMENTS TO THE VERTICIES AT THE END OF THIS METHOD THE CHANGES ARE THROWN OUT SINCE vertex 1 and vertex 2 ARE BOTH DESTROYED ON CLOSURE OF THE METHOD MAYBE
+	void SetVertices(Vertex* vertex1, Vertex* vertex2, const int WEIGHT);
+	void SetVertices(const string VERTEX1, const string VERTEX2, const int WEIGHT);
 	void OutputAllConnections();
-	void SetVertex(const string STADIUM_NAME, const string TEAM_NAME, const string ADDRESS, const string CITY_STATE_ZIP, const string PHONE_NUMBER, const string DATE_OPENED, const int CAPACITY);
+	void AddVertex(Vertex* vertex);
 	void DepthFirstSearch(Vertex* startVertex);
 	void DepthFirstSearch(const string START_VERTEX_NAME);
 	bool IsDiscoveryEdge(vector<Vertex*> visitedVertices, Vertex* vertex);
