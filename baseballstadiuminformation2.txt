@@ -1,5 +1,5 @@
-﻿Chase Field
 Arizona Diamondbacks
+Chase Field
 401 East Jefferson Street
 Phoenix, AZ 85004
 (602) 462-6500
@@ -9,8 +9,8 @@ NationalLeague - YES
 AmericanLeague - NO
 Astroturf - N/A
 
-Turner Field
 Atlanta Braves
+Turner Field
 755 Hank Aaron Drive
 Atlanta, GA 30315
 (404) 522-7630
@@ -20,8 +20,8 @@ NationalLeague - YES
 AmericanLeague - NO
 Astroturf - N/A
 
-Oriole Park at Camden Yards
 Baltimore Orioles
+Oriole Park at Camden Yards
 333 West Camden Street
 Baltimore, MD 21201
 (410) 685-9800
@@ -31,8 +31,8 @@ NationalLeague - NO
 AmericanLeague - YES
 Astroturf - N/A
 
-Fenway Park
 Boston Red Sox
+Fenway Park
 4 Yawkey Way,
 Boston, MA 02215
 (877) 733-7699
@@ -42,8 +42,8 @@ NationalLeague - NO
 AmericanLeague - YES
 Astroturf - N/A
 
-Wrigley Field
 Chicago Cubs
+Wrigley Field
 1060 West Addison Street
 Chicago, IL 60613
 (773) 404-2827
@@ -53,8 +53,8 @@ NationalLeague - YES
 AmericanLeague - NO
 Astroturf - N/A
 
-US Cellular Field
 Chicago White Sox
+US Cellular Field
 333 West 35th Street
 Chicago, IL 60616
 (312) 674-1000
@@ -64,8 +64,8 @@ NationalLeague - NO
 AmericanLeague - YES
 Astroturf - N/A
 
-Great America Ball Park
 Cincinnati Reds
+Great America Ball Park
 100 Joe Nuxhall Way
 Cincinnati, OH 45202
 (513) 381-7337
@@ -75,8 +75,8 @@ NationalLeague - YES
 AmericanLeague - NO
 Astroturf - N/A
 
-Progressive Field
 Cleveland Indians
+Progressive Field
 2401 Ontario Street
 Cleveland, OH 44115
 (216) 420-4487
@@ -86,8 +86,8 @@ NationalLeague - NO
 AmericanLeague - YES
 Astroturf - N/A
 
-Coors Field
 Colorado Rockies
+Coors Field
 2001 Blake St
 Denver, CO 80205
 (303) 292-0200
@@ -97,8 +97,8 @@ NationalLeague - YES
 AmericanLeague - NO
 Astroturf - N/A
 
-Comerica Park
 Detroit Tigers
+Comerica Park
 2100 Woodward Ave,
 Detroit, MI 48201
 (313) 962-4000
@@ -108,8 +108,8 @@ NationalLeague - NO
 AmericanLeague - YES
 Astroturf - N/A
 
-Minute Maid Park
 Houston Astros
+Minute Maid Park
 501 Crawford St,
 Houston, TX 77002
 (713) 259-8000
@@ -119,8 +119,8 @@ NationalLeague - NO
 AmericanLeague - YES
 Astroturf - N/A
 
-Kauffman Stadium
 Kansas City Royals
+Kauffman Stadium
 1 Royal Way
 Kansas City, MO 64129
 (816) 921-8000
@@ -130,8 +130,8 @@ NationalLeague - NO
 AmericanLeague - YES
 Astroturf - N/A
 
-Angels Stadium of Anaheim
 Los Angeles Angels of Anaheim
+Angels Stadium of Anaheim
 2000 E Gene Autry Way,
 Anaheim, CA 92806
 (714)940-2000
@@ -141,8 +141,8 @@ NationalLeague - NO
 AmericanLeague - YES
 Astroturf - N/A
 
-Dodger Stadium
 Los Angeles Dodgers
+Dodger Stadium
 1000 Elysian Park Avenue
 Los Angeles, CA 90090
 (323) 224-1507
@@ -152,8 +152,8 @@ NationalLeague - YES
 AmericanLeague - NO
 Astroturf - N/A
 
-Marlins Park
 Miami Marlins
+Marlins Park
 501 Marlins Way
 Miami, FL 33125
 (305)480-1300
@@ -163,8 +163,8 @@ NationalLeague - YES
 AmericanLeague - NO
 Astroturf - N/A
 
-Miller Park
 Milwaukee Brewers
+Miller Park
 1 Brewers Way
 Milwaukee, WI 53214
 (414) 902-4400
@@ -174,8 +174,8 @@ NationalLeague - YES
 AmericanLeague - NO
 Astroturf - N/A
 
-Target Field
 Minnesota Twins
+Target Field
 353 N 5th St
 Minneapolis, MN 55403
 (800) 338-9467
@@ -185,8 +185,8 @@ NationalLeague - NO
 AmericanLeague - YES
 Astroturf - N/A
 
-Citi Field
 New York Mets
+Citi Field
 126th St. & Roosevelt Ave.
 Queens, NY 11368
 (718) 507-6387
@@ -196,8 +196,8 @@ NationalLeague - YES
 AmericanLeague - NO
 Astroturf - N/A
 
-Yankee Stadium
 New York Yankees
+Yankee Stadium
 1 E 161st St
 South Bronx, NY 10451
 (718) 293-4300
@@ -207,8 +207,8 @@ NationalLeague - NO
 AmericanLeague - YES
 Astroturf - N/A
 
-O.co Coliseum
 Oakland Athletics
+O.co Coliseum
 7000 Coliseum Way
 Oakland, CA 94621
 (510) 569-2121
@@ -218,8 +218,8 @@ NationalLeague - NO
 AmericanLeague - YES
 Astroturf - N/A
 
-Citizens Bank Park
 Philadelphia Phillies
+Citizens Bank Park
 1 Citizens Bank Way
 Philadelphia, PA 19148
 (215) 463-1000
@@ -229,8 +229,8 @@ NationalLeague - YES
 AmericanLeague - NO
 Astroturf - N/A
 
-PNC Park
 Pittsburgh Pirates
+PNC Park
 115 Federal St
 Pittsburgh, PA 15212
 (412) 321-2827
@@ -240,8 +240,8 @@ NationalLeague - YES
 AmericanLeague - NO
 Astroturf - N/A
 
-Petco Park
 San Diego Padres
+Petco Park
 19 Tony Gwynn Drive
 San Diego, CA 92101
 (619) 795-5000
@@ -251,8 +251,8 @@ NationalLeague - YES
 AmericanLeague - NO
 Astroturf - N/A
 
-AT&T Park
 San Francisco Giants
+AT&T Park
 24 Willie Mays Plaza
 San Francisco, CA 94107
 (415) 972-2000
@@ -262,8 +262,8 @@ NationalLeague - YES
 AmericanLeague - NO
 Astroturf - N/A
 
-SafeCo Field
 Seattle Mariners
+SafeCo Field
 1516 First Avenue South
 Seattle, WA 98134
 (206) 346-4000
@@ -273,8 +273,8 @@ NationalLeague - NO
 AmericanLeague - YES
 Astroturf - N/A
 
-Busch Stadium
 St. Louis Cardinals
+Busch Stadium
 700 Clark Street
 St. Louis, MO 63102
 (314) 345-9600
@@ -284,8 +284,8 @@ NationalLeague - YES
 AmericanLeague - NO
 Astroturf - N/A
 
-Tropicana Field
 Tampa Bay Rays
+Tropicana Field
 1 Tropicana Dr
 St. Petersburg, FL 33705
 (727) 825-3137
@@ -295,8 +295,8 @@ NationalLeague - NO
 AmericanLeague - YES
 Astroturf - N/A
 
-Globe Life Park in Arlington
 Texas Rangers
+Globe Life Park in Arlington
 1000 Ballpark Way,
 Arlington, TX 76011
 (817) 273-5222
@@ -306,8 +306,8 @@ NationalLeague - NO
 AmericanLeague - YES
 Astroturf - N/A
 
-Rogers Centre
 Toronto Blue Jays
+Rogers Centre
 1 Blue Jays Way
 Toronto, Ontario, Canada M5V1J3
 +1 416-341-1000
@@ -317,8 +317,8 @@ NationalLeague - NO
 AmericanLeague - YES
 Astroturf - N/A
 
-Nationals Park
 Washington Nationals
+Nationals Park
 1500 S Capitol St SE
 Washington, DC 20003
 (202) 675-6287
@@ -328,13 +328,13 @@ NationalLeague - YES
 AmericanLeague - NO
 Astroturf - N/A
 
-asdasd
-newstadium
-asdadasdasd
+newteam
+newStadiumName
+25991 El Barat
 Laguna Niguel, CA 92677
-23232323
-Opened - Dec. 13, 2009
-Capacity - 2000
+714-290-8367
+Opened - January 23, 1900
+Capacity - 20033
 NationalLeague - NO
 AmericanLeague - YES
 Astroturf - N/A

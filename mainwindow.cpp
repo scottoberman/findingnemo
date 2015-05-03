@@ -9,6 +9,7 @@
 #include <iomanip>
 #include "majorleaguestadiums.h"
 #include "dreamvacation.h"
+#include "adminmenu.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -52,4 +53,11 @@ void MainWindow::on_pushButton_3_clicked()
     {
         QApplication::quit();
     }
+}
+
+void MainWindow::on_pushButton_4_clicked()
+{
+    adminMenu *admin = new adminMenu;
+    this->close();
+    admin->show();
 }

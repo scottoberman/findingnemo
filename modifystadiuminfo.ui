@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>adminMenu</class>
- <widget class="QDialog" name="adminMenu">
+ <class>modifyStadiumInfo</class>
+ <widget class="QDialog" name="modifyStadiumInfo">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
     <width>400</width>
-    <height>300</height>
+    <height>332</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,40 +16,42 @@
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>60</x>
-     <y>40</y>
-     <width>291</width>
-     <height>51</height>
+     <x>80</x>
+     <y>280</y>
+     <width>221</width>
+     <height>41</height>
     </rect>
    </property>
    <property name="text">
-    <string>Add New Team</string>
+    <string>main menu</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="Menu">
+  <widget class="QComboBox" name="comboBox">
    <property name="geometry">
     <rect>
      <x>50</x>
-     <y>240</y>
-     <width>291</width>
-     <height>51</height>
+     <y>130</y>
+     <width>281</width>
+     <height>41</height>
     </rect>
    </property>
-   <property name="text">
-    <string>Menu</string>
-   </property>
+   <item>
+    <property name="text">
+     <string>Select a Stadium</string>
+    </property>
+   </item>
   </widget>
-  <widget class="QPushButton" name="pushButton_2">
+  <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>60</x>
+     <x>120</x>
      <y>100</y>
-     <width>291</width>
-     <height>51</height>
+     <width>151</width>
+     <height>21</height>
     </rect>
    </property>
    <property name="text">
-    <string>Modify Stadium Information</string>
+    <string>Select a Stadium to Modify</string>
    </property>
   </widget>
  </widget>

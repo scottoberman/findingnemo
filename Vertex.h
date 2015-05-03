@@ -25,18 +25,18 @@ class Edge;
 class Vertex
 {
 public:
-	string name;
-	vector<Edge*> connections;
-	int dijkstraWeight;
-	Vertex* dijkstraPrevVertex;
+    string name;
+    vector<Edge*> connections;
+    int dijkstraWeight;
+    Vertex* dijkstraPrevVertex;
 
-	Vertex();
-	Vertex(const string NAME);
+    Vertex();
+    Vertex(const string NAME);
 
-	void AddConnection(Edge* connection);
-	Vertex* GetOtherVertex(Edge* connection);
-	void OutputAllConnections();
-	bool HasBeenVisited(vector<Vertex*> visitedVertices);
+    void AddConnection(Edge* connection);
+    Vertex* GetOtherVertex(Edge* connection);
+    void OutputAllConnections();
+    bool HasBeenVisited(vector<Vertex*> visitedVertices);
 };
 
 #endif
