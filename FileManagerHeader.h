@@ -11,15 +11,15 @@
 
 struct stadiumInfo {
     //setting all values to default NULL values in construction of struct
-    std::string stadiumName      ;
-    std::string streetAddress    ;
-    std::string cityStateZip     ;
-    std::string phoneNumber		 ;
-    std::string dateOpened       ;
-    std::string seatingCapacity  ;
-    bool        nationalLeague   ;
-    bool        americanLeague   ;
-    bool        astroturf        ;
+    std::string teamName;
+    std::string streetAddress;
+    std::string cityStateZip;
+    std::string phoneNumber;
+    std::string dateOpened;
+    std::string seatingCapacity;
+    bool        nationalLeague;
+    bool        americanLeague;
+    bool        astroturf;
 };
 
 class FileManager {
@@ -31,6 +31,7 @@ public:
     std::string printAll();
     std::queue<std::string> getAmericanLeagueStadiums();
     std::queue<std::string> getNationalLeagueStadiums();
+    std::queue<std::string> getAstroturfStadiums();
     std::queue<std::string> getAllStadiums();
     std::queue<std::string> getAstroturfStadiums();//not implemented yet
     void getAllStadiumsVector(std::vector<std::string> *returnVec);

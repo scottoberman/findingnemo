@@ -7,7 +7,7 @@ Opened – April 19, 1966
 Capacity – 45,483
 NationalLeague - NO
 AmericanLeague - YES
-Astroturf - N/A
+Astroturf - NO
 
 Comerica Park
 Detroit Tigers
@@ -18,7 +18,7 @@ Opened – April 11, 2000
 Capacity – 41,681
 NationalLeague - NO
 AmericanLeague - YES
-Astroturf - N/A
+Astroturf - NO
 
 Fenway Park
 Boston Red Sox
@@ -29,7 +29,7 @@ Opened – April 20, 1912
 Capacity – 37,499 (night) & 37,071 (day)
 NationalLeague - NO
 AmericanLeague - YES
-Astroturf - N/A
+Astroturf - NO
 
 Globe Life Park in Arlington
 Texas Rangers
@@ -40,7 +40,7 @@ Opened – April 1, 1994
 Capacity – 48,114
 NationalLeague - NO
 AmericanLeague - YES
-Astroturf - N/A
+Astroturf - NO
 
 Kauffman Stadium
 Kansas City Royals
@@ -51,7 +51,7 @@ Opened – April 10, 1973
 Capacity – 37,903
 NationalLeague - NO
 AmericanLeague - YES
-Astroturf - N/A
+Astroturf - NO
 
 Minute Maid Park
 Houston Astros
@@ -62,7 +62,7 @@ Opened - March 30, 2000
 Capacity - 42,060
 NationalLeague - NO
 AmericanLeague - YES
-Astroturf - N/A
+Astroturf - NO
 
 O.co Coliseum
 Oakland Athletics
@@ -73,7 +73,7 @@ Opened - September 18, 1966
 Capacity - 37,090 (April - August) & 55,945 (Sept - Jan)
 NationalLeague - NO
 AmericanLeague - YES
-Astroturf - N/A
+Astroturf - NO
 
 Oriole Park at Camden Yards
 Baltimore Orioles
@@ -84,7 +84,7 @@ Opened - April 6, 1992
 Capacity - 48,187
 NationalLeague - NO
 AmericanLeague - YES
-Astroturf - N/A
+Astroturf - NO
 
 Progressive Field
 Cleveland Indians
@@ -95,7 +95,7 @@ Opened - April 2, 1994
 Capacity - 42,404
 NationalLeague - NO
 AmericanLeague - YES
-Astroturf - N/A
+Astroturf - NO
 
 Rogers Centre
 Toronto Blue Jays
@@ -106,7 +106,7 @@ Opened - June 3, 1989
 Capacity - 49,282
 NationalLeague - NO
 AmericanLeague - YES
-Astroturf - N/A
+Astroturf - YES
 
 SafeCo Field
 Seattle Mariners
@@ -117,7 +117,7 @@ Opened - July 15, 1999
 Capacity - 47,476
 NationalLeague - NO
 AmericanLeague - YES
-Astroturf - N/A
+Astroturf - NO
 
 Target Field
 Minnesota Twins
@@ -128,7 +128,7 @@ Opened - April 12, 2010
 Capacity - 39,021
 NationalLeague - NO
 AmericanLeague - YES
-Astroturf - N/A
+Astroturf - NO
 
 Tropicana Field
 Tampa Bay Rays
@@ -139,7 +139,7 @@ Opened - March 3, 1990
 Capacity - 31,042 (Regular Season) 42,735 (Postseason)
 NationalLeague - NO
 AmericanLeague - YES
-Astroturf - N/A
+Astroturf - YES
 
 US Cellular Field
 Chicago White Sox
@@ -150,7 +150,7 @@ Opened - April 18, 1991
 Capacity - 40,615
 NationalLeague - NO
 AmericanLeague - YES
-Astroturf - N/A
+Astroturf - NO
 
 Yankee Stadium
 New York Yankees
@@ -161,7 +161,7 @@ Opened - April 16, 2009
 Capacity - 50,291
 NationalLeague - NO
 AmericanLeague - YES
-Astroturf - N/A
+Astroturf - NO
 
 AT&T Park
 San Francisco Giants
@@ -172,7 +172,7 @@ Opened - April 11, 2000
 Capacity - 41,915
 NationalLeague - YES
 AmericanLeague - NO
-Astroturf - N/A
+Astroturf - NO
 
 Busch Stadium
 St. Louis Cardinals
@@ -183,7 +183,7 @@ Opened - April 10, 2006
 Capacity - 46,861
 NationalLeague - YES
 AmericanLeague - NO
-Astroturf - N/A
+Astroturf - NO
 
 Chase Field
 Arizona Diamondbacks
@@ -194,7 +194,7 @@ Opened - March 31, 1998
 Capacity - 48,633
 NationalLeague - YES
 AmericanLeague - NO
-Astroturf - N/A
+Astroturf - NO
 
 Citi Field
 New York Mets
@@ -205,7 +205,7 @@ Opened - April 13, 2009
 Capacity - 41,922
 NationalLeague - YES
 AmericanLeague - NO
-Astroturf - N/A
+Astroturf - NO
 
 Citizens Bank Park
 Philadelphia Phillies
@@ -216,7 +216,7 @@ Opened - April 3, 2004
 Capacity - 43,651
 NationalLeague - YES
 AmericanLeague - NO
-Astroturf - N/A
+Astroturf - NO
 
 Coors Field
 Colorado Rockies
@@ -227,7 +227,7 @@ Opened - April 26, 1995
 Capacity - 50,480
 NationalLeague - YES
 AmericanLeague - NO
-Astroturf - N/A
+Astroturf - NO
 
 Dodger Stadium
 Los Angeles Dodgers
@@ -238,7 +238,7 @@ Opened - April 10, 1962
 Capacity - 56,000
 NationalLeague - YES
 AmericanLeague - NO
-Astroturf - N/A
+Astroturf - NO
 
 Great America Ball Park
 Cincinnati Reds
@@ -249,7 +249,7 @@ Opened - March 31, 2003
 Capacity - 42,319
 NationalLeague - YES
 AmericanLeague - NO
-Astroturf - N/A
+Astroturf - NO
 
 Marlins Park
 Miami Marlins
@@ -260,7 +260,7 @@ Opened - April 4, 2012
 Capacity - 37,442
 NationalLeague - YES
 AmericanLeague - NO
-Astroturf - N/A
+Astroturf - NO
 
 Miller Park
 Milwaukee Brewers
@@ -271,7 +271,7 @@ Opened - April 6, 2001
 Capacity - 41,900
 NationalLeague - YES
 AmericanLeague - NO
-Astroturf - N/A
+Astroturf - NO
 
 Nationals Park
 Washington Nationals
@@ -282,7 +282,7 @@ Opened - March 30, 2008
 Capacity - 41,418
 NationalLeague - YES
 AmericanLeague - NO
-Astroturf - N/A
+Astroturf - NO
 
 Petco Park
 San Diego Padres
@@ -293,7 +293,7 @@ Opened - April 8, 2004
 Capacity - 42,524
 NationalLeague - YES
 AmericanLeague - NO
-Astroturf - N/A
+Astroturf - NO
 
 PNC Park
 Pittsburgh Pirates
@@ -304,7 +304,7 @@ March 31, 2001
 Capacity - 38,362
 NationalLeague - YES
 AmericanLeague - NO
-Astroturf - N/A
+Astroturf - NO
 
 Turner Field
 Atlanta Braves
@@ -315,7 +315,7 @@ Opened - March 29, 1997
 Capacity - 49,586
 NationalLeague - YES
 AmericanLeague - NO
-Astroturf - N/A
+Astroturf - NO
 
 Wrigley Field
 Chicago Cubs
@@ -326,4 +326,4 @@ Opened - April 23, 1914
 Capacity - 42,374
 NationalLeague - YES
 AmericanLeague - NO
-Astroturf - N/A
+Astroturf - NO

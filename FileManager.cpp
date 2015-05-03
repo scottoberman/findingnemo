@@ -9,8 +9,7 @@
 /*COMMENT ABOUT THE FILE INFO: I couldn't think of a much better way than to
  * simply include a boolean stating if the team is a national or American
  * league team, as well as a boolean to state if the stadium has astroturf or
- * if the feild is real grass. (NOTE: the astroturn boolean is not yet
- * implemented).
+ * if the feild is real grass.
  */
 
 /*this default constructor will get all the data from the file and add it to a
@@ -18,18 +17,22 @@
  */
 FileManager::FileManager() {
     std::ifstream inFile;
+
     inFile.open("C:/Users/gdfgdf/Documents/findingnemo/baseballstadiuminformation.txt");
     if (inFile.is_open())
         qDebug() << "OPENED";
     else
         qDebug() << "NOPE";
 
+    //NOTE: COMMENTED OUT FOR TESTING PURPOSES
+    inFile.open("basecallStadiumInformation.txt");
+
     while(!inFile.eof()) {
         stadiumInfo newStadium;
-        std::string newTeamName;
+        std::string newStadiumName;
 
-        std::getline(inFile, newStadium.stadiumName);
-        std::getline(inFile, newTeamName);
+        std::getline(inFile, newStadiumName);
+        std::getline(inFile, newStadium.teamName);
         std::getline(inFile, newStadium.streetAddress);
         std::getline(inFile, newStadium.cityStateZip);
         std::getline(inFile, newStadium.phoneNumber);
@@ -56,7 +59,7 @@ FileManager::FileManager() {
         inFile.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 
         //adding all the data to the FileManager
-        listOfStadiums[newTeamName] = newStadium;
+        listOfStadiums[newStadiumName] = newStadium;
 
     }//end - while !inFile.eof()
 }// end - FileManager - default constructor
@@ -71,7 +74,7 @@ std::string FileManager::printAll() {
 
     std::map<std::string, stadiumInfo>::iterator it = listOfStadiums.begin();
     for(; it != listOfStadiums.end(); it++) {
-        stadiumOutput += it->first + " -> " + it->second.stadiumName + "\n";
+        stadiumOutput += it->first + " -> " + it->second.teamName + "\n";
     }//end - for
 
     return stadiumOutput;
@@ -108,6 +111,20 @@ std::queue<std::string> FileManager::getNationalLeagueStadiums() {
 
     return returnQueue;
 }//end - getAmericanLeagueStadiums
+
+/*returns a queue of all the stadiums WITHOUT astroturn*/
+std::queue<std::string> FileManager::getAstroturfStadiums() {
+    std::queue<std::string> returnQueue;
+
+    std::map<std::string, stadiumInfo>::iterator it = listOfStadiums.begin();
+    for(; it != listOfStadiums.end(); it++) {
+        if(it->second.astroturf) {
+            returnQueue.push(it->first);
+        }
+    }//end - for
+
+    return returnQueue;
+}//end - getAstroturnStadiums
 
 /*getAllStadiums will return a queue of an alphabetized list of all
  * the stadiums currently in the list
