@@ -34,7 +34,9 @@ public:
     std::queue<std::string> getAstroturfStadiums();
     std::queue<std::string> getAllStadiums();
     std::queue<std::string> getAstroturfStadiums();//not implemented yet
-    void getAllStadiumsVector(std::vector<std::string> *returnVec);
+    std::map<std::string, stadiumInfo>getListOfStadiums();
+    void writeToFile();
+    void addNewTeam(std::string teamName, stadiumInfo newStadium);
 
 //MUTATORS/////////////////////////////////////////////////////////////////////
 

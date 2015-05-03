@@ -139,3 +139,53 @@ std::queue<std::string> FileManager::getAllStadiums() {
 
     return returnQueue;
 }//end - getAllStadiums
+std::map<std::string, stadiumInfo> FileManager::getListOfStadiums()
+{
+    return listOfStadiums;
+}//end - getAllStadiums
+void FileManager::addNewTeam(std::string teamName, stadiumInfo newStadium)
+{
+    listOfStadiums[teamName] = newStadium;
+}
+void FileManager::writeToFile()
+{
+    stadiumInfo currentStadium;
+    std::ofstream outFile;
+    outFile.open("C:/Users/gdfgdf/Documents/findingnemo/baseballstadiuminformation.txt");
+    std::map<std::string, stadiumInfo>::iterator it = listOfStadiums.begin();
+    int totalStadiums = listOfStadiums.size();
+    int count = 0;
+    for(; it != listOfStadiums.end(); it++) {
+        count++;
+        currentStadium = it->second;
+        outFile << currentStadium.stadiumName << "\n";
+        outFile << it->first << "\n";
+        outFile << currentStadium.streetAddress << "\n";
+        outFile << currentStadium.cityStateZip << "\n";
+        outFile << currentStadium.phoneNumber << "\n";
+        outFile << currentStadium.dateOpened  << "\n";
+        outFile << currentStadium.seatingCapacity << "\n";
+        outFile << "NationalLeague - ";
+        if (currentStadium.nationalLeague)
+            outFile << "YES";
+        else
+            outFile << "NO";
+        outFile << "\n";
+        outFile << "AmericanLeague - ";
+        if (currentStadium.americanLeague)
+            outFile << "YES";
+        else
+            outFile << "NO";
+        outFile << "\n";
+        outFile << "Astroturf - ";
+        if (currentStadium.astroturf)
+            outFile << "";
+        else
+            outFile << "N/A";
+        if (count < totalStadiums)
+        {
+            outFile << "\n\n";
+        }
+
+    }//end - for
+}

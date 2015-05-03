@@ -21,7 +21,12 @@ SOURCES += main.cpp\
     total.cpp \
     adminmenu.cpp \
     loginadmin.cpp \
-    filemanager.cpp
+    filemanager.cpp \
+    vertex.cpp \
+    edge.cpp \
+    addnewteam.cpp \
+    modifystadiuminfo.cpp \
+    stadiummodify.cpp
 
 HEADERS  += mainwindow.h \
     dreamvacation.h \
@@ -31,7 +36,12 @@ HEADERS  += mainwindow.h \
     total.h \
     adminmenu.h \
     loginadmin.h \
-    filemanagerheader.h
+    filemanagerheader.h \
+    vertex.h \
+    edge.h \
+    addnewteam.h \
+    modifystadiuminfo.h \
+    stadiummodify.h
 
 FORMS    += mainwindow.ui \
     dreamvacation.ui \
@@ -40,7 +50,10 @@ FORMS    += mainwindow.ui \
     purchasesouv.ui \
     total.ui \
     adminmenu.ui \
-    loginadmin.ui
+    loginadmin.ui \
+    addnewteam.ui \
+    modifystadiuminfo.ui \
+    stadiummodify.ui
 
 DISTFILES += \
     baseballstadiuminformation.txt

@@ -15,6 +15,13 @@ public:
     explicit adminMenu(QWidget *parent = 0);
     ~adminMenu();
 
+private slots:
+    void on_pushButton_clicked();
+
+    void on_Menu_clicked();
+
+    void on_pushButton_2_clicked();
+
 private:
     Ui::adminMenu *ui;
 };

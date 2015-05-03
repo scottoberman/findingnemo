@@ -25,14 +25,14 @@ class Vertex;
 class Edge
 {
 public:
-	int weight;
-	Vertex* vertices[2];
+    int weight;
+    Vertex* vertices[2];
 
-	Edge();
-	Edge(Vertex* vertex1, Vertex* vertex2, int weight);
+    Edge();
+    Edge(Vertex* vertex1, Vertex* vertex2, int weight);
 
-	void AddEdge(Vertex* vertex1, Vertex* vertex2, int weight);
-	Vertex* GetOtherVertex(Vertex* thisVertex);
+    void AddEdge(Vertex* vertex1, Vertex* vertex2, int weight);
+    Vertex* GetOtherVertex(Vertex* thisVertex);
 };
 
 #endif
