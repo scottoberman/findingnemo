@@ -25,7 +25,7 @@ FileManager::FileManager() {
         qDebug() << "NOPE";
 
     //NOTE: COMMENTED OUT FOR TESTING PURPOSES
-    inFile.open("basecallStadiumInformation.txt");
+//    inFile.open("basecallStadiumInformation.txt");
 
     while(!inFile.eof()) {
         stadiumInfo newStadium;
