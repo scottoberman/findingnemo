@@ -5,6 +5,8 @@
  *      Author: Talon
  */
 #include "FileManagerHeader.h"
+#include <sstream>
+#include <fstream>
 #include <QDebug>
 /*COMMENT ABOUT THE FILE INFO: I couldn't think of a much better way than to
  * simply include a boolean stating if the team is a national or American
@@ -25,7 +27,7 @@ FileManager::FileManager() {
         qDebug() << "NOPE";
 
     //NOTE: COMMENTED OUT FOR TESTING PURPOSES
-//    inFile.open("basecallStadiumInformation.txt");
+//    inFile.open("baseballStadiumInformation.txt");
 
     while(!inFile.eof()) {
         stadiumInfo newStadium;
@@ -139,53 +141,80 @@ std::queue<std::string> FileManager::getAllStadiums() {
 
     return returnQueue;
 }//end - getAllStadiums
-std::map<std::string, stadiumInfo> FileManager::getListOfStadiums()
-{
-    return listOfStadiums;
-}//end - getAllStadiums
-void FileManager::addNewTeam(std::string teamName, stadiumInfo newStadium)
-{
-    listOfStadiums[teamName] = newStadium;
-}
-void FileManager::writeToFile()
-{
-    stadiumInfo currentStadium;
-    std::ofstream outFile;
-    outFile.open("C:/Users/gdfgdf/Documents/findingnemo/baseballstadiuminformation.txt");
-    std::map<std::string, stadiumInfo>::iterator it = listOfStadiums.begin();
-    int totalStadiums = listOfStadiums.size();
-    int count = 0;
-    for(; it != listOfStadiums.end(); it++) {
-        count++;
-        currentStadium = it->second;
-        outFile << currentStadium.stadiumName << "\n";
-        outFile << it->first << "\n";
-        outFile << currentStadium.streetAddress << "\n";
-        outFile << currentStadium.cityStateZip << "\n";
-        outFile << currentStadium.phoneNumber << "\n";
-        outFile << currentStadium.dateOpened  << "\n";
-        outFile << currentStadium.seatingCapacity << "\n";
-        outFile << "NationalLeague - ";
-        if (currentStadium.nationalLeague)
-            outFile << "YES";
-        else
-            outFile << "NO";
-        outFile << "\n";
-        outFile << "AmericanLeague - ";
-        if (currentStadium.americanLeague)
-            outFile << "YES";
-        else
-            outFile << "NO";
-        outFile << "\n";
-        outFile << "Astroturf - ";
-        if (currentStadium.astroturf)
-            outFile << "";
-        else
-            outFile << "N/A";
-        if (count < totalStadiums)
-        {
-            outFile << "\n\n";
-        }
 
+/*This method will update the text file that stores the data making it
+Persistent between executions. This MUST be ran before the program
+closes or the file will remain unchanged. Simply call this method and the
+new data will be saved.*/
+void FileManager::updateList()
+{
+	std::stringstream updateStr;
+
+    std::map<std::string, stadiumInfo>::iterator it = listOfStadiums.begin();
+    std::map<std::string, stadiumInfo>::iterator checkNext = it;
+
+    //checkNext set to the next item in the list
+    checkNext++;
+    for(; it != listOfStadiums.end(); it++, checkNext++) {
+    	//adding the name to the output stream
+        updateStr << it->first << std::endl;
+
+        //all other stadium information
+        updateStr << it->second.teamName        << std::endl;
+        updateStr << it->second.streetAddress   << std::endl;
+        updateStr << it->second.cityStateZip    << std::endl;
+        updateStr << it->second.phoneNumber     << std::endl;
+        updateStr << it->second.dateOpened      << std::endl;
+        updateStr << it->second.seatingCapacity << std::endl;
+
+        //checking booleans for the national, American and astroturf fields
+    	updateStr << "NationalLeague - ";
+        if(it->second.nationalLeague)
+        	updateStr << "YES";
+        else
+        	updateStr << "NO";
+        updateStr << std::endl;
+
+    	updateStr << "AmericanLeague - ";
+        if(it->second.americanLeague)
+        	updateStr << "YES";
+        else
+        	updateStr << "NO";
+        updateStr << std::endl;
+
+    	updateStr << "Astroturf - ";
+        if(it->second.astroturf)
+        	updateStr << "YES";
+        else
+        	updateStr << "NO";
+        updateStr << std::endl;
+
+        //extra endl to pad for the next stadium's information if not end of file
+        if(checkNext != listOfStadiums.end())
+        	updateStr << std::endl;
     }//end - for
-}
+
+    //output for testing only
+//    std::cout << updateStr.str() << "========================";
+
+
+    //opening, overwriting and closing the stadium text file
+	std::ofstream newFile;
+
+	remove("C:/Users/gdfgdf/Documents/findingnemo/baseballstadiuminformation.txt");
+
+	newFile.open("C:/Users/gdfgdf/Documents/findingnemo/baseballstadiuminformation.txt");
+		if (newFile.is_open())
+            qDebug() << "OPENED";
+        else
+            qDebug() << "NOPE";
+
+//	remove("baseballstadiuminformation.txt");
+//
+//	newFile.open("baseballstadiuminformation.txt");
+
+	newFile << updateStr.str();
+
+	newFile.close();
+
+}//end - updateList
