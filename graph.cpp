@@ -9,6 +9,11 @@
 
 #include "Graph.h"
 
+void Graph::SetVertex(const string NAME)
+{
+	vertices.push_back(new Vertex(NAME));
+}
+
 // Sets up two vertices and an edge between them with just the names of each vertex and the weight of their edge.
 void Graph::SetVertices(const string VERTEX_1_NAME, const string VERTEX_2_NAME, const int WEIGHT)
 {
@@ -132,7 +137,7 @@ void Graph::OutputAllConnections()
 	}
 }
 
-int Graph::DijkstrasAlgorithm(const string START_VERTEX_NAME, const string END_VERTEX_NAME)
+stack<string> Graph::DijkstrasAlgorithm(const string START_VERTEX_NAME, const string END_VERTEX_NAME, int& weightOfTrip)
 {
 	vector<Vertex*>::const_iterator vertexIterator = vertices.begin();
 
@@ -159,11 +164,13 @@ int Graph::DijkstrasAlgorithm(const string START_VERTEX_NAME, const string END_V
 
 	}
 
-	return DijkstrasAlgorithm(startVertex, endVertex);
+	return DijkstrasAlgorithm(startVertex, endVertex, weightOfTrip);
 }
 
-int Graph::DijkstrasAlgorithm(Vertex* startVertex, Vertex* endVertex)
+stack<string> Graph::DijkstrasAlgorithm(Vertex* startVertex, Vertex* endVertex, int& weightOfTrip)
 {
+	weightOfTrip = 0;
+
 	vector<Vertex*> notVisitedVertices = vertices;
 	vector<Vertex*> visitedVertices;
 	vector<Edge*> visitedConnections;
@@ -172,6 +179,8 @@ int Graph::DijkstrasAlgorithm(Vertex* startVertex, Vertex* endVertex)
 	vector<Edge*>::iterator	activeConnection = activeVertex->connections.begin();
 	vector<Vertex*>::const_iterator nextVertex;
 	vector<Edge*>::const_iterator nextEdge;
+
+	stack<string> verticesToVisit;
 
 	startVertex->dijkstraWeight = 0; // CHECK THIS LATER K
 
@@ -210,17 +219,17 @@ int Graph::DijkstrasAlgorithm(Vertex* startVertex, Vertex* endVertex)
 
 	Vertex* outputVertex = endVertex;
 
-	cout << "Outputting shortest path from " << startVertex->name << " to " << endVertex->name << ":" << endl;
+	// Set the names of which vertices should be visited in the order they appear.
 	while (outputVertex != startVertex)
 	{
-		cout << outputVertex->name << endl;
+		verticesToVisit.push(outputVertex->name);
 		outputVertex = outputVertex->dijkstraPrevVertex;
 	}
 	cout << outputVertex->name << endl;
-	cout << "Distance traveled is: " << endVertex->dijkstraWeight << endl;
 
-	return endVertex->dijkstraWeight;
+	weightOfTrip = endVertex->dijkstraWeight;
 
+	return verticesToVisit;
 }
 
 void Graph::PrimsAlgorithm(const string START_VERTEX_NAME)

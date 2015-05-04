@@ -36,17 +36,20 @@
       <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
     <Filter Include="Generated Files\Debug">
-      <UniqueIdentifier>{06d2af4f-5695-4863-a3bf-3a153a0e4f2c}</UniqueIdentifier>
+      <UniqueIdentifier>{2d01dacc-30b2-4e33-b44f-5562338dba17}</UniqueIdentifier>
       <Extensions>cpp;moc</Extensions>
       <SourceControlFiles>False</SourceControlFiles>
     </Filter>
     <Filter Include="Generated Files\Release">
-      <UniqueIdentifier>{b23af90c-b153-44d4-a450-a37f77ad2631}</UniqueIdentifier>
+      <UniqueIdentifier>{b773885d-6597-412c-aacb-a2a4eb27dfcf}</UniqueIdentifier>
       <Extensions>cpp;moc</Extensions>
       <SourceControlFiles>False</SourceControlFiles>
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="addnewteam.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="adminmenu.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -54,6 +57,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="dreamvacation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="edge.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="filemanager.cpp">
@@ -71,11 +77,26 @@
     <ClCompile Include="majorleaguestadiums.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="modifystadiuminfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="purchasesouv.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stadiummodify.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="total.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vertex.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_addnewteam.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Release\moc_addnewteam.cpp">
+      <Filter>Generated Files\Release</Filter>
     </ClCompile>
     <ClCompile Include="Debug\moc_adminmenu.cpp">
       <Filter>Generated Files\Debug</Filter>
@@ -113,10 +134,22 @@
     <ClCompile Include="Release\moc_majorleaguestadiums.cpp">
       <Filter>Generated Files\Release</Filter>
     </ClCompile>
+    <ClCompile Include="Debug\moc_modifystadiuminfo.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Release\moc_modifystadiuminfo.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
     <ClCompile Include="Debug\moc_purchasesouv.cpp">
       <Filter>Generated Files\Debug</Filter>
     </ClCompile>
     <ClCompile Include="Release\moc_purchasesouv.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_stadiummodify.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Release\moc_stadiummodify.cpp">
       <Filter>Generated Files\Release</Filter>
     </ClCompile>
     <ClCompile Include="Debug\moc_total.cpp">
@@ -125,17 +158,14 @@
     <ClCompile Include="Release\moc_total.cpp">
       <Filter>Generated Files\Release</Filter>
     </ClCompile>
-    <ClCompile Include="Edge.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="graph.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Vertex.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <CustomBuild Include="addnewteam.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
     <CustomBuild Include="adminmenu.h">
       <Filter>Header Files</Filter>
     </CustomBuild>
@@ -145,6 +175,9 @@
     <CustomBuild Include="dreamvacation.h">
       <Filter>Header Files</Filter>
     </CustomBuild>
+    <ClInclude Include="edge.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="filemanagerheader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -157,14 +190,26 @@
     <CustomBuild Include="majorleaguestadiums.h">
       <Filter>Header Files</Filter>
     </CustomBuild>
+    <CustomBuild Include="modifystadiuminfo.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
     <CustomBuild Include="purchasesouv.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="stadiummodify.h">
       <Filter>Header Files</Filter>
     </CustomBuild>
     <CustomBuild Include="total.h">
       <Filter>Header Files</Filter>
     </CustomBuild>
+    <ClInclude Include="vertex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <CustomBuild Include="addnewteam.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
     <CustomBuild Include="adminmenu.ui">
       <Filter>Form Files</Filter>
     </CustomBuild>
@@ -183,7 +228,13 @@
     <CustomBuild Include="majorleaguestadiums.ui">
       <Filter>Form Files</Filter>
     </CustomBuild>
+    <CustomBuild Include="modifystadiuminfo.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
     <CustomBuild Include="purchasesouv.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="stadiummodify.ui">
       <Filter>Form Files</Filter>
     </CustomBuild>
     <CustomBuild Include="total.ui">
@@ -191,6 +242,9 @@
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="GeneratedFiles\ui_addnewteam.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
     <ClInclude Include="GeneratedFiles\ui_adminmenu.h">
       <Filter>Generated Files</Filter>
     </ClInclude>
@@ -209,17 +263,17 @@
     <ClInclude Include="GeneratedFiles\ui_majorleaguestadiums.h">
       <Filter>Generated Files</Filter>
     </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_modifystadiuminfo.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
     <ClInclude Include="GeneratedFiles\ui_purchasesouv.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_stadiummodify.h">
       <Filter>Generated Files</Filter>
     </ClInclude>
     <ClInclude Include="GeneratedFiles\ui_total.h">
       <Filter>Generated Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Vertex.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Edge.h">
-      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Graph.h">
       <Filter>Header Files</Filter>
