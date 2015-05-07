@@ -17,6 +17,7 @@ struct stadiumInfo {
     std::string phoneNumber;
     std::string dateOpened;
     std::string seatingCapacity;
+    std::map<std::string,double> souvs;
     bool        nationalLeague;
     bool        americanLeague;
     bool        astroturf;
@@ -34,6 +35,9 @@ public:
     std::queue<std::string> getAstroturfStadiums();
     std::queue<std::string> getAllStadiums();
     void getAllStadiumsVector(std::vector<std::string> *returnVec);
+    std::map<std::string, stadiumInfo> getListOfStadiums();
+    void addNewTeam(std::string stadiumName, stadiumInfo stadium);
+    void deleteStadium(std::string stadiumName);
 
 //MUTATORS/////////////////////////////////////////////////////////////////////
 

@@ -90,24 +90,22 @@ void addNewTeam::on_pushButton_clicked()
     }
     else
         {
-        std::ostringstream stream2;
-        std::ostringstream stream3;
+        std::ostringstream stream;
 
         std::map<std::string, stadiumInfo> listOfStadiums;
         FileManager fileManager;
         listOfStadiums = fileManager.getListOfStadiums();
         stadiumInfo newStadium;
-        std::string newTeamName;
+        std::string newStadiumName;
 
-        newStadium.stadiumName = ui->stadiumName->text().toStdString();
-        newTeamName = ui->teamName->text().toStdString();
+        newStadium.teamName = ui->teamName->text().toStdString();
+        newStadiumName = ui->stadiumName->text().toStdString();
         newStadium.streetAddress = ui->streetAddress->text().toStdString();
-
         newStadium.cityStateZip = ui->cityStateZip->text().toStdString();
         newStadium.phoneNumber  = ui->phoneNumber->text().toStdString();
         newStadium.dateOpened   = "Opened - " + ui->monthDayYear->text().toStdString();
-        stream3 << "Capacity - " << ui->seatingCapacity->value();
-        newStadium.seatingCapacity = stream3.str();
+        stream << "Capacity - " << ui->seatingCapacity->value();
+        newStadium.seatingCapacity = stream.str();
 
         if (ui->nationalLeague->currentText() == "Yes")
         {
@@ -126,8 +124,8 @@ void addNewTeam::on_pushButton_clicked()
             newStadium.americanLeague = false;
         }
         newStadium.astroturf = false;
-        fileManager.addNewTeam(newTeamName,newStadium);
-        fileManager.writeToFile();
+        fileManager.addNewTeam(newStadiumName,newStadium);
+        fileManager.updateList();
 
         adminMenu *menu = new adminMenu;
         this->reject();

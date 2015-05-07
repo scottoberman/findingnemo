@@ -12,12 +12,15 @@ class stadiumModify : public QDialog
     Q_OBJECT
 
 public:
-    explicit stadiumModify(QWidget *parent = 0,QString selectedTeam = " ");
+    explicit stadiumModify(QWidget *parent = 0,QString selectedStad = " ");
     ~stadiumModify();
+
+private slots:
+    void on_pushButton_clicked();
 
 private:
     Ui::stadiumModify *ui;
-    QString selectedTeam;
+    QString selectedStadium;
 };
 
 #endif // STADIUMMODIFY_H
