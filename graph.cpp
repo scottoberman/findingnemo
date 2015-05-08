@@ -14,6 +14,18 @@ void Graph::SetVertex(const string NAME)
 	vertices.push_back(new Vertex(NAME));
 }
 
+void Graph::ChangeVertexName(const string OG_NAME, const string NEW_NAME)
+{
+	vector<Vertex*>::iterator vertexIterator = vertices.begin();
+
+	while ((*vertexIterator)->name != OG_NAME)
+	{
+		vertexIterator++;
+	}
+
+	(*vertexIterator)->name = NEW_NAME;
+}
+
 // Sets up two vertices and an edge between them with just the names of each vertex and the weight of their edge.
 void Graph::SetVertices(const string VERTEX_1_NAME, const string VERTEX_2_NAME, const int WEIGHT)
 {

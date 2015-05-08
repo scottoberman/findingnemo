@@ -31,6 +31,8 @@ public:
 
 	void SetVertex(const string NAME);
 
+	void ChangeVertexName(const string OG_NAME, const string NEW_NAME);
+
 	void SetVertices(const string VERTEX1, const string VERTEX2, const int WEIGHT);
 	void SetVertices(Vertex* vertex1, Vertex* vertex2, const int WEIGHT);
 	

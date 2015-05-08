@@ -151,7 +151,7 @@ public:
          << QApplication::translate("stadiumModify", "No", 0)
         );
         error2->setText(QApplication::translate("stadiumModify", "required *", 0));
-        pushButton->setText(QApplication::translate("stadiumModify", "Add", 0));
+        pushButton->setText(QApplication::translate("stadiumModify", "Save", 0));
         error3->setText(QApplication::translate("stadiumModify", "required *", 0));
         label_9->setText(QApplication::translate("stadiumModify", "Street Address", 0));
         label_6->setText(QApplication::translate("stadiumModify", "Seating Capacity", 0));

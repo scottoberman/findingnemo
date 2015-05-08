@@ -1,4 +1,4 @@
-﻿Build started 5/4/2015 2:16:47 AM.
+﻿Build started 5/8/2015 1:58:08 PM.
      1>Project "C:\Users\Scott\Documents\GitHub\findingnemo\findingnemo.vcxproj" on node 2 (Build target(s)).
      1>CustomBuild:
          Moc'ing addnewteam.h...
@@ -24,16 +24,8 @@
          Uic'ing stadiummodify.ui...
          Uic'ing total.ui...
        ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I. /IC:\Qt\5.4\msvc2013\include /IC:\Qt\5.4\msvc2013\include\QtWidgets /IC:\Qt\5.4\msvc2013\include\QtGui /IC:\Qt\5.4\msvc2013\include\QtANGLE /IC:\Qt\5.4\msvc2013\include\QtCore /Idebug /I. /I"C:\Qt\5.4\msvc2013\mkspecs\win32-msvc2013" /I.\GeneratedFiles /Zi /nologo /W3 /WX- /Od /Oy- /D _WINDOWS /D UNICODE /D WIN32 /D QT_WIDGETS_LIB /D QT_GUI_LIB /D QT_CORE_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"Win32\Debug\\" /Fd"Win32\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt -Zm200 -w34100 -w34189 addnewteam.cpp adminmenu.cpp Debug\moc_addnewteam.cpp Debug\moc_adminmenu.cpp Debug\moc_displaytrip.cpp Debug\moc_dreamvacation.cpp Debug\moc_loginadmin.cpp Debug\moc_mainwindow.cpp Debug\moc_majorleaguestadiums.cpp Debug\moc_modifystadiuminfo.cpp Debug\moc_purchasesouv.cpp Debug\moc_stadiummodify.cpp Debug\moc_total.cpp displaytrip.cpp dreamvacation.cpp loginadmin.cpp main.cpp mainwindow.cpp majorleaguestadiums.cpp modifystadiuminfo.cpp purchasesouv.cpp stadiummodify.cpp total.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I. /IC:\Qt\5.4\msvc2013\include /IC:\Qt\5.4\msvc2013\include\QtWidgets /IC:\Qt\5.4\msvc2013\include\QtGui /IC:\Qt\5.4\msvc2013\include\QtANGLE /IC:\Qt\5.4\msvc2013\include\QtCore /Idebug /I. /I"C:\Qt\5.4\msvc2013\mkspecs\win32-msvc2013" /I.\GeneratedFiles /Zi /nologo /W3 /WX- /Od /Oy- /D _WINDOWS /D UNICODE /D WIN32 /D QT_WIDGETS_LIB /D QT_GUI_LIB /D QT_CORE_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"Win32\Debug\\" /Fd"Win32\Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt -Zm200 -w34100 -w34189 addnewteam.cpp adminmenu.cpp Debug\moc_addnewteam.cpp Debug\moc_adminmenu.cpp Debug\moc_displaytrip.cpp Debug\moc_dreamvacation.cpp Debug\moc_loginadmin.cpp Debug\moc_mainwindow.cpp Debug\moc_majorleaguestadiums.cpp Debug\moc_modifystadiuminfo.cpp Debug\moc_purchasesouv.cpp Debug\moc_stadiummodify.cpp Debug\moc_total.cpp displaytrip.cpp dreamvacation.cpp graph.cpp loginadmin.cpp main.cpp mainwindow.cpp majorleaguestadiums.cpp modifystadiuminfo.cpp purchasesouv.cpp stadiummodify.cpp total.cpp
          addnewteam.cpp
-     1>addnewteam.cpp(98): error C2039: 'getListOfStadiums' : is not a member of 'FileManager'
-                 c:\users\scott\documents\github\findingnemo\filemanagerheader.h(25) : see declaration of 'FileManager'
-     1>addnewteam.cpp(102): error C2039: 'stadiumName' : is not a member of 'stadiumInfo'
-                 c:\users\scott\documents\github\findingnemo\filemanagerheader.h(12) : see declaration of 'stadiumInfo'
-     1>addnewteam.cpp(129): error C2039: 'addNewTeam' : is not a member of 'FileManager'
-                 c:\users\scott\documents\github\findingnemo\filemanagerheader.h(25) : see declaration of 'FileManager'
-     1>addnewteam.cpp(130): error C2039: 'writeToFile' : is not a member of 'FileManager'
-                 c:\users\scott\documents\github\findingnemo\filemanagerheader.h(25) : see declaration of 'FileManager'
          adminmenu.cpp
          moc_addnewteam.cpp
          moc_adminmenu.cpp
@@ -48,23 +40,57 @@
          moc_total.cpp
          displaytrip.cpp
          dreamvacation.cpp
+         graph.cpp
          loginadmin.cpp
          main.cpp
          mainwindow.cpp
          majorleaguestadiums.cpp
-         modifystadiuminfo.cpp
          Generating Code...
          Compiling...
+         modifystadiuminfo.cpp
          purchasesouv.cpp
          stadiummodify.cpp
-     1>stadiummodify.cpp(19): error C2039: 'getListOfStadiums' : is not a member of 'FileManager'
-                 c:\users\scott\documents\github\findingnemo\FileManagerHeader.h(25) : see declaration of 'FileManager'
-     1>stadiummodify.cpp(20): error C2039: 'stadiumName' : is not a member of 'stadiumInfo'
-                 c:\users\scott\documents\github\findingnemo\FileManagerHeader.h(12) : see declaration of 'stadiumInfo'
          total.cpp
          Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"debug\\findingnemo.exe" /NOLOGO /LIBPATH:C:\Qt\5.4\msvc2013\lib /LIBPATH:C:\Qt\5.4\msvc2013\lib /LIBPATH:C:\Qt\5.4\msvc2013\lib C:\Qt\5.4\msvc2013\lib\qtmaind.lib shell32.lib C:\Qt\5.4\msvc2013\lib\Qt5Cored.lib C:\Qt\5.4\msvc2013\lib\Qt5Widgetsd.lib C:\Qt\5.4\msvc2013\lib\Qt5Guid.lib C:\Qt\5.4\msvc2013\lib\Qt5Cored.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"debug\findingnemo.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /MACHINE:X86 /SAFESEH "/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" Win32\Debug\addnewteam.obj
+         Win32\Debug\adminmenu.obj
+         Win32\Debug\moc_addnewteam.obj
+         Win32\Debug\moc_adminmenu.obj
+         Win32\Debug\moc_displaytrip.obj
+         Win32\Debug\moc_dreamvacation.obj
+         Win32\Debug\moc_loginadmin.obj
+         Win32\Debug\moc_mainwindow.obj
+         Win32\Debug\moc_majorleaguestadiums.obj
+         Win32\Debug\moc_modifystadiuminfo.obj
+         Win32\Debug\moc_purchasesouv.obj
+         Win32\Debug\moc_stadiummodify.obj
+         Win32\Debug\moc_total.obj
+         Win32\Debug\displaytrip.obj
+         Win32\Debug\dreamvacation.obj
+         Win32\Debug\edge.obj
+         Win32\Debug\filemanager.obj
+         Win32\Debug\graph.obj
+         Win32\Debug\loginadmin.obj
+         Win32\Debug\main.obj
+         Win32\Debug\mainwindow.obj
+         Win32\Debug\majorleaguestadiums.obj
+         Win32\Debug\modifystadiuminfo.obj
+         Win32\Debug\purchasesouv.obj
+         Win32\Debug\stadiummodify.obj
+         Win32\Debug\total.obj
+         Win32\Debug\vertex.obj
+         LINK : debug\\findingnemo.exe not found or not built by the last incremental link; performing full link
+     1>addnewteam.obj : error LNK2019: unresolved external symbol "public: class std::map<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,struct stadiumInfo,struct std::less<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > >,class std::allocator<struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const ,struct stadiumInfo> > > __thiscall FileManager::getListOfStadiums(void)" (?getListOfStadiums@FileManager@@QAE?AV?$map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@UstadiumInfo@@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@UstadiumInfo@@@std@@@2@@std@@XZ) referenced in function "private: void __thiscall addNewTeam::on_pushButton_clicked(void)" (?on_pushButton_clicked@addNewTeam@@AAEXXZ)
+     1>stadiummodify.obj : error LNK2001: unresolved external symbol "public: class std::map<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,struct stadiumInfo,struct std::less<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > >,class std::allocator<struct std::pair<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const ,struct stadiumInfo> > > __thiscall FileManager::getListOfStadiums(void)" (?getListOfStadiums@FileManager@@QAE?AV?$map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@UstadiumInfo@@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@UstadiumInfo@@@std@@@2@@std@@XZ)
+     1>addnewteam.obj : error LNK2019: unresolved external symbol "public: void __thiscall FileManager::addNewTeam(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,struct stadiumInfo)" (?addNewTeam@FileManager@@QAEXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@UstadiumInfo@@@Z) referenced in function "private: void __thiscall addNewTeam::on_pushButton_clicked(void)" (?on_pushButton_clicked@addNewTeam@@AAEXXZ)
+     1>stadiummodify.obj : error LNK2001: unresolved external symbol "public: void __thiscall FileManager::addNewTeam(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,struct stadiumInfo)" (?addNewTeam@FileManager@@QAEXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@UstadiumInfo@@@Z)
+     1>addnewteam.obj : error LNK2019: unresolved external symbol "public: void __thiscall FileManager::updateList(void)" (?updateList@FileManager@@QAEXXZ) referenced in function "private: void __thiscall addNewTeam::on_pushButton_clicked(void)" (?on_pushButton_clicked@addNewTeam@@AAEXXZ)
+     1>stadiummodify.obj : error LNK2001: unresolved external symbol "public: void __thiscall FileManager::updateList(void)" (?updateList@FileManager@@QAEXXZ)
+     1>stadiummodify.obj : error LNK2019: unresolved external symbol "public: void __thiscall FileManager::deleteStadium(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (?deleteStadium@FileManager@@QAEXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z) referenced in function "private: void __thiscall stadiumModify::on_pushButton_clicked(void)" (?on_pushButton_clicked@stadiumModify@@AAEXXZ)
+     1>debug\\findingnemo.exe : fatal error LNK1120: 4 unresolved externals
      1>Done Building Project "C:\Users\Scott\Documents\GitHub\findingnemo\findingnemo.vcxproj" (Build target(s)) -- FAILED.
 
 Build FAILED.
 
-Time Elapsed 00:00:21.31
+Time Elapsed 00:00:22.79
