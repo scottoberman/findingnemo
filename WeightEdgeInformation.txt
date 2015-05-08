@@ -1,0 +1,279 @@
+SafeCo Field
+AT&T Park
+680
+
+SafeCo Field
+O.co Coliseum
+680
+
+SafeCo Field
+Rogers Centre
+2070
+
+SafeCo Field
+Target Field
+1390
+
+AT&T Park
+O.co Coliseum
+0
+
+AT&T Park
+Dodger Stadium
+340
+
+AT&T Park
+Chase Field
+650
+
+O.co Coliseum
+Dodger Stadium
+340
+
+O.co Coliseum
+Chase Field
+650
+
+O.co Coliseum
+Angels Stadium of Anaheim
+350
+
+Angels Stadium of Anaheim
+Dodger Stadium
+0
+
+Angels Stadium of Anaheim
+Petco Park
+110
+
+Angels Stadium of Anaheim
+Target Field1
+500
+
+Dodger Stadium
+Petco Park
+110
+
+Dodger Stadium
+Target Field
+1500
+
+Petco Park
+Chase Field
+300
+
+Chase Field
+Globe Life Park in Arlington
+870
+
+Chase Field
+Minute Maid Park
+1115
+
+Minute Maid Park
+Tropicana Field
+790
+
+Minute Maid Park
+Marlins Park
+965
+
+Minute Maid Park
+Globe Life Park in Arlington
+230
+
+Minute Maid Park
+Busch Stadium
+680
+
+Globe Life Park in Arlington
+Coors Field
+650
+
+Globe Life Park in Arlington
+Kauffman Stadium
+460
+
+Globe Life Park in Arlington
+Turner Field 
+740
+
+Tropicana Field
+Marlins Park
+210
+
+Tropicana Field
+Great America Ball Park
+790
+
+Marlins Park
+Turner Field 
+600
+
+Marlins Park
+Nationals Park
+930
+
+Marlins Park
+Oriole Park at Camden Yards
+930
+
+Marlins Park
+Fenway Park
+1255
+
+Turner Field 
+Great America Ball Park
+375
+
+Turner Field 
+Nationals Park
+560
+
+Turner Field 
+Oriole Park at Camden Yards
+560
+
+Oriole Park at Camden Yards
+Nationals Park
+0
+
+Oriole Park at Camden Yards
+Citizens Bank Park
+90
+
+Oriole Park at Camden Yards
+PNC Park
+195
+
+Nationals Park
+PNC Park
+195
+
+Nationals Park
+Citizens Bank Park
+90
+
+Citizens Bank Park
+Citi Field
+80
+
+Citizens Bank Park
+Yankee Stadium
+80
+
+Citi Field
+Yankee Stadium
+0
+
+Citi Field
+Fenway Park
+195
+
+Citi Field
+PNC Park
+315
+
+Yankee Stadium
+Fenway Park
+195
+
+Yankee Stadium
+PNC Park
+315
+
+Fenway Park
+Rogers Centre
+430
+
+PNC Park
+Rogers Centre
+225
+
+PNC Park
+Progressive Field
+115
+
+PNC Park
+Great America Ball Park
+260
+
+Great America Ball Park
+Busch Stadium
+310
+
+Great America Ball Park
+Progressive Field
+225
+
+Great America Ball Park
+US Cellular Field
+250
+
+Great America Ball Park
+Wrigley Field
+250
+
+US Cellular Field
+Wrigley Field
+0
+
+US Cellular Field
+Miller Park
+80
+
+US Cellular Field
+Comerica Park
+240
+
+US Cellular Field
+Kauffman Stadium
+415
+
+Wrigley Field
+Miller Park
+80
+
+Wrigley Field
+Comerica Park
+240
+
+Wrigley Field
+Kauffman Stadium
+415
+
+Progressive Field
+Comerica Park
+90
+
+Rogers Centre
+Comerica Park
+210
+
+Rogers Centre
+Miller Park
+430
+
+Miller Park
+Target Field
+300
+
+Busch Stadium
+Target Field
+465
+
+Busch Stadium
+Kauffman Stadium
+235
+
+Coors Field
+Petco Park
+830
+
+Coors Field
+Kauffman Stadium
+560
+
+Coors Field
+Chase Field
+580
