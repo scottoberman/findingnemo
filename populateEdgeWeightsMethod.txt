@@ -1,0 +1,28 @@
+/*this method will call the graph class' SetEdge method to set all the edges
+ * based off the file WeightEdgeInformation.txt
+ */
+void FileManager::populateEdgeWeights() {
+	std::ifstream inFile;
+
+	inFile.open("C:/Users/gdfgdf/Documents/findingnemo/WeightEdgeInformation.txt");
+//	if (inFile.is_open())
+//		qDebug() << "OPENED";
+//	else
+//		qDebug() << "NOPE";
+
+	Graph graph;
+
+	while(!inFile.eof()) {
+		std::string fromStadium;
+		std::string toStadium;
+		int weight;
+
+		std::getline(inFile, fromStadium);
+		std::getline(inFile, toStadium);
+		inFile >> weight;
+		inFile.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+		inFile.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+
+		graph.SetEdge(fromStadium, toStadium, weight);
+	}//end - while
+}//end - populateEdgeWeights
