@@ -39,7 +39,7 @@ public:
 	
 	void OutputAllConnections();
 
-	stack<string> Graph::DijkstrasAlgorithm(const string START_VERTEX_NAME, const string END_VERTEX_NAME, int& weightOfTrip);
+	stack<string> DijkstrasAlgorithm(const string START_VERTEX_NAME, const string END_VERTEX_NAME, int& weightOfTrip);
 	stack<string> DijkstrasAlgorithm(Vertex* startVertex, Vertex* endVertex, int& weightOfTrip);
 	
 	queue<string> PrimsAlgorithm(const string START_VERTEX_NAME, int& weight);
