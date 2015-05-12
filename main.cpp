@@ -1,3 +1,4 @@
+#include "Graph.h"
 #include "mainwindow.h"
 #include <QApplication>
 #include <iostream>
@@ -6,6 +7,8 @@
 #include <vector>
 #include <QDebug>
 #include "filemanagerheader.h"
+
+Graph graph;
 
 int main(int argc, char *argv[])
 {

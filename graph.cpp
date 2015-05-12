@@ -244,7 +244,7 @@ stack<string> Graph::DijkstrasAlgorithm(Vertex* startVertex, Vertex* endVertex, 
     return verticesToVisit;
 }
 
-void Graph::PrimsAlgorithm(const string START_VERTEX_NAME)
+queue<string> Graph::PrimsAlgorithm(const string START_VERTEX_NAME, int& weight)
 {
     vector<Vertex*>::const_iterator vertexIterator = vertices.begin();
 
@@ -263,11 +263,16 @@ void Graph::PrimsAlgorithm(const string START_VERTEX_NAME)
 
     }
 
+<<<<<<< HEAD
     PrimsAlgorithm(startVertex);
+=======
+	return PrimsAlgorithm(startVertex, weight);
+>>>>>>> origin/master
 }
 
-void Graph::PrimsAlgorithm(Vertex* startVertex)
+queue<string> Graph::PrimsAlgorithm(Vertex* startVertex, int& weight)
 {
+<<<<<<< HEAD
     vector<Vertex*> visitedVertices;
     vector<Edge*> connectionsToTake;
     vector<Edge*>::const_iterator connectionsIterator;
@@ -324,3 +329,69 @@ void Graph::PrimsAlgorithm(Vertex* startVertex)
     cout << "Distance traveled is: " << totalDistance << endl;
 
 }
+=======
+	vector<Vertex*> visitedVertices;
+	vector<Edge*> connectionsToTake;
+	vector<Edge*>::const_iterator connectionsIterator;
+	vector<Vertex*>::const_iterator vertexIterator;
+	Vertex* activeVertex = startVertex;
+	Edge* connectionToMoveAcross = NULL;
+	int totalDistance = 0;
+
+	queue<string> MST;
+
+	visitedVertices.push_back(startVertex);
+
+	vertexIterator = visitedVertices.begin();
+	connectionsIterator = (*visitedVertices.begin())->connections.begin();
+
+	// While not every single vertex has been added to the MST, keep looking for a short edge.
+	while (visitedVertices.size() != vertices.size())
+	{
+		// While we have not examined every vertex visited for a short edge, keep searching.
+		while (vertexIterator != visitedVertices.end())
+		{
+			connectionsIterator = (*vertexIterator)->connections.begin();
+			// While we have not examined every edge connected to the active vertex, keep checking.
+			while (connectionsIterator != (*vertexIterator)->connections.end())
+			{
+				// If the vertex being checked has not been visited and the weight of the edge is shortest, mark it for being an edge of the MST
+				if ((!(*connectionsIterator)->GetOtherVertex(*vertexIterator)->HasBeenVisited(visitedVertices)) && ((connectionToMoveAcross == NULL) || ((*connectionsIterator)->weight < connectionToMoveAcross->weight)))// ??CHECLK HERERERERER
+				{
+					connectionToMoveAcross = (*connectionsIterator);
+					activeVertex = (*vertexIterator);
+				}
+				connectionsIterator++;
+			}
+			vertexIterator++;
+			
+		}
+
+		visitedVertices.push_back(connectionToMoveAcross->GetOtherVertex(activeVertex));
+		connectionsToTake.push_back(connectionToMoveAcross);
+		totalDistance += connectionToMoveAcross->weight;
+
+		connectionToMoveAcross = NULL;
+		vertexIterator = visitedVertices.begin();
+		connectionsIterator = (*visitedVertices.begin())->connections.begin();
+
+
+	}
+
+	connectionsIterator = connectionsToTake.begin();
+	cout << "Outputting MST: " << endl;
+	while (connectionsIterator != connectionsToTake.end())
+	{
+		cout << (*connectionsIterator)->vertices[0]->name << " connected to " << (*connectionsIterator)->vertices[1]->name << endl;
+		connectionsIterator++;
+
+		MST.push((*connectionsIterator)->vertices[0]->name + " connected to " + (*connectionsIterator)->vertices[1]->name);
+	}
+	cout << "Distance traveled is: " << totalDistance << endl;
+
+	weight = totalDistance;
+
+	return MST;
+
+}
+>>>>>>> origin/master
