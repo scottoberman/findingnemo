@@ -329,4 +329,6 @@ queue<string> Graph::PrimsAlgorithm(Vertex* startVertex, int& weight)
 
 	weight = totalDistance;
 
+	return MST;
+
 }
