@@ -244,7 +244,7 @@ stack<string> Graph::DijkstrasAlgorithm(Vertex* startVertex, Vertex* endVertex, 
 	return verticesToVisit;
 }
 
-void Graph::PrimsAlgorithm(const string START_VERTEX_NAME)
+queue<string> Graph::PrimsAlgorithm(const string START_VERTEX_NAME, int& weight)
 {
 	vector<Vertex*>::const_iterator vertexIterator = vertices.begin();
 
@@ -263,10 +263,10 @@ void Graph::PrimsAlgorithm(const string START_VERTEX_NAME)
 
 	}
 
-	PrimsAlgorithm(startVertex);
+	return PrimsAlgorithm(startVertex, weight);
 }
 
-void Graph::PrimsAlgorithm(Vertex* startVertex)
+queue<string> Graph::PrimsAlgorithm(Vertex* startVertex, int& weight)
 {
 	vector<Vertex*> visitedVertices;
 	vector<Edge*> connectionsToTake;
@@ -275,6 +275,8 @@ void Graph::PrimsAlgorithm(Vertex* startVertex)
 	Vertex* activeVertex = startVertex;
 	Edge* connectionToMoveAcross = NULL;
 	int totalDistance = 0;
+
+	queue<string> MST;
 
 	visitedVertices.push_back(startVertex);
 
@@ -320,7 +322,11 @@ void Graph::PrimsAlgorithm(Vertex* startVertex)
 	{
 		cout << (*connectionsIterator)->vertices[0]->name << " connected to " << (*connectionsIterator)->vertices[1]->name << endl;
 		connectionsIterator++;
+
+		MST.push((*connectionsIterator)->vertices[0]->name + " connected to " + (*connectionsIterator)->vertices[1]->name);
 	}
 	cout << "Distance traveled is: " << totalDistance << endl;
+
+	weight = totalDistance;
 
 }

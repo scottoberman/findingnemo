@@ -15,6 +15,7 @@
 #include <iomanip>
 #include <sstream>
 #include <stack>
+#include <queue>
 #include <string>
 #include <vector>
 #include "Edge.h"
@@ -41,8 +42,8 @@ public:
 	stack<string> Graph::DijkstrasAlgorithm(const string START_VERTEX_NAME, const string END_VERTEX_NAME, int& weightOfTrip);
 	stack<string> DijkstrasAlgorithm(Vertex* startVertex, Vertex* endVertex, int& weightOfTrip);
 	
-	void PrimsAlgorithm(const string START_VERTEX_NAME);
-	void PrimsAlgorithm(Vertex* startVertex);
+	queue<string> PrimsAlgorithm(const string START_VERTEX_NAME, int& weight);
+	queue<string> PrimsAlgorithm(Vertex* startVertex, int& weight);
 };
 
 #endif
