@@ -1,0 +1,300 @@
+AT&T Park
+Baseball cap
+25.99
+Baseball bat
+30.11
+Team pennant
+0
+Autographed baseball
+0
+~
+Angels Stadium of Anaheim
+Baseball cap
+25.99
+Baseball bat
+35.35
+Team pennant
+12.99
+Autographed baseball
+19.99
+~
+Busch Stadium
+Baseball cap
+25.99
+Baseball bat
+35.35
+Team pennant
+12.99
+Autographed baseball
+19.99
+~
+Chase Field
+Baseball cap
+25.99
+Baseball bat
+35.35
+Team pennant
+12.99
+Autographed baseball
+19.99
+~
+Citi Field
+Baseball cap
+25.99
+Baseball bat
+35.35
+Team pennant
+12.99
+Autographed baseball
+19.99
+~
+Citizens Bank Park
+Baseball cap
+25.99
+Baseball bat
+35.35
+Team pennant
+12.99
+Autographed baseball
+19.99
+~
+Comerica Park
+Baseball cap
+25.99
+Baseball bat
+35.35
+Team pennant
+12.99
+Autographed baseball
+19.99
+~
+Coors Field
+Baseball cap
+25.99
+Baseball bat
+35.35
+Team pennant
+12.99
+Autographed baseball
+19.99
+~
+Dodger Stadium
+Baseball cap
+25.99
+Baseball bat
+35.35
+Team pennant
+12.99
+Autographed baseball
+19.99
+~
+Fenway Park
+Baseball cap
+25.99
+Baseball bat
+35.35
+Team pennant
+12.99
+Autographed baseball
+19.99
+~
+Globe Life Park in Arlington
+Baseball cap
+25.99
+Baseball bat
+35.35
+Team pennant
+12.99
+Autographed baseball
+19.99
+~
+Great America Ball Park
+Baseball cap
+25.99
+Baseball bat
+35.35
+Team pennant
+12.99
+Autographed baseball
+19.99
+~
+Kauffman Stadium
+Baseball cap
+25.99
+Baseball bat
+35.35
+Team pennant
+12.99
+Autographed baseball
+19.99
+~
+Marlins Park
+Baseball cap
+25.99
+Baseball bat
+35.35
+Team pennant
+12.99
+Autographed baseball
+19.99
+~
+Miller Park
+Baseball cap
+25.99
+Baseball bat
+35.35
+Team pennant
+12.99
+Autographed baseball
+19.99
+~
+Minute Maid Park
+Baseball cap
+25.99
+Baseball bat
+35.35
+Team pennant
+12.99
+Autographed baseball
+19.99
+~
+Nationals Park
+Baseball cap
+25.99
+Baseball bat
+35.35
+Team pennant
+12.99
+Autographed baseball
+19.99
+~
+O.co Coliseum
+Baseball cap
+25.99
+Baseball bat
+35.35
+Team pennant
+12.99
+Autographed baseball
+19.99
+~
+Oriole Park at Camden Yards
+Baseball cap
+25.99
+Baseball bat
+35.35
+Team pennant
+12.99
+Autographed baseball
+19.99
+~
+PNC Park
+Baseball cap
+25.99
+Baseball bat
+35.35
+Team pennant
+12.99
+Autographed baseball
+19.99
+~
+Petco Park
+Baseball cap
+25.99
+Baseball bat
+35.35
+Team pennant
+12.99
+Autographed baseball
+19.99
+~
+Progressive Field
+Baseball cap
+25.99
+Baseball bat
+35.35
+Team pennant
+12.99
+Autographed baseball
+19.99
+~
+Rogers Centre
+Baseball cap
+25.99
+Baseball bat
+35.35
+Team pennant
+12.99
+Autographed baseball
+19.99
+~
+SafeCo Field
+Baseball cap
+25.99
+Baseball bat
+35.35
+Team pennant
+12.99
+Autographed baseball
+19.99
+~
+Target Field
+Baseball cap
+25.99
+Baseball bat
+35.35
+Team pennant
+12.99
+Autographed baseball
+19.99
+~
+Tropicana Field
+Baseball cap
+25.99
+Baseball bat
+35.35
+Team pennant
+12.99
+Autographed baseball
+19.99
+~
+Turner Field 
+Baseball cap
+25.99
+Baseball bat
+35.35
+Team pennant
+12.99
+Autographed baseball
+19.99
+~
+US Cellular Field
+Baseball cap
+25.99
+Baseball bat
+35.35
+Team pennant
+12.99
+Autographed baseball
+19.99
+~
+Wrigley Field
+Baseball cap
+25.99
+Baseball bat
+35.35
+Team pennant
+12.99
+Autographed baseball
+19.99
+~
+Yankee Stadium
+Baseball cap
+25.99
+Baseball bat
+35.35
+Team pennant
+12.99
+Autographed baseball
+19.99
+~

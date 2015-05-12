@@ -321,6 +321,19 @@
     </rect>
    </property>
   </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>450</y>
+     <width>131</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Modify Souvenirs</string>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>

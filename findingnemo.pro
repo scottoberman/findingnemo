@@ -26,7 +26,11 @@ SOURCES += main.cpp\
     edge.cpp \
     addnewteam.cpp \
     modifystadiuminfo.cpp \
-    stadiummodify.cpp
+    stadiummodify.cpp \
+    souvenirdata.cpp \
+    graph.cpp \
+    souvedit.cpp \
+    addsouv.cpp
 
 HEADERS  += mainwindow.h \
     dreamvacation.h \
@@ -41,7 +45,11 @@ HEADERS  += mainwindow.h \
     edge.h \
     addnewteam.h \
     modifystadiuminfo.h \
-    stadiummodify.h
+    stadiummodify.h \
+    souvenirdata.h \
+    graph.h \
+    souvedit.h \
+    addsouv.h
 
 FORMS    += mainwindow.ui \
     dreamvacation.ui \
@@ -53,7 +61,10 @@ FORMS    += mainwindow.ui \
     loginadmin.ui \
     addnewteam.ui \
     modifystadiuminfo.ui \
-    stadiummodify.ui
+    stadiummodify.ui \
+    souvedit.ui \
+    addsouv.ui
 
 DISTFILES += \
-    baseballstadiuminformation.txt
+    baseballstadiuminformation.txt \
+    souvenirinfolist.txt

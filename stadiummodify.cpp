@@ -4,6 +4,8 @@
 #include <QDebug>
 #include "sstream"
 #include "adminmenu.h"
+#include "souvedit.h"
+
 stadiumModify::stadiumModify(QWidget *parent, QString stadiumName) :
     QDialog(parent),
     ui(new Ui::stadiumModify)
@@ -121,10 +123,18 @@ void stadiumModify::on_pushButton_clicked()
         }
         newStadium.astroturf = false;
         fileManager.addNewTeam(newStadiumName,newStadium);
+        //graph.ChangeName(oldname, newname)
         fileManager.updateList();
 
         adminMenu *menu = new adminMenu;
         this->reject();
         menu->show();
     }
+}
+
+void stadiumModify::on_pushButton_2_clicked()
+{
+    SouvEdit* souvedit = new SouvEdit(this,selectedStadium);
+    this->reject();
+    souvedit->show();
 }
