@@ -46,4 +46,5 @@ public:
 	queue<string> PrimsAlgorithm(Vertex* startVertex, int& weight);
 };
 
+extern Graph graph;
 #endif
