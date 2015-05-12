@@ -24,7 +24,7 @@ void displaytrip::on_pushButton_clicked()
 
 void displaytrip::on_pushButton_2_clicked()
 {
-    purchasesouv *purchase = new purchasesouv;
+    purchasesouv *purchase = new purchasesouv(this,"Busch Stadium");
     this->reject();
     purchase->show();
 }

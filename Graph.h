@@ -27,35 +27,23 @@ using namespace std;
 class Graph
 {
 public:
-    vector<Edge*>	edges;
-    vector<Vertex*> vertices;
+        vector<Edge*>	edges;
+        vector<Vertex*> vertices;
 
-    void SetVertex(const string NAME);
+        void SetVertex(const string NAME);
 
-    void ChangeVertexName(const string OG_NAME, const string NEW_NAME);
+        void ChangeVertexName(const string OG_NAME, const string NEW_NAME);
 
-    void SetVertices(const string VERTEX1, const string VERTEX2, const int WEIGHT);
-    void SetVertices(Vertex* vertex1, Vertex* vertex2, const int WEIGHT);
+        void SetVertices(const string VERTEX1, const string VERTEX2, const int WEIGHT);
+        void SetVertices(Vertex* vertex1, Vertex* vertex2, const int WEIGHT);
 
-<<<<<<< HEAD
-    void OutputAllConnections();
+        void OutputAllConnections();
 
-    stack<string> Graph::DijkstrasAlgorithm(const string START_VERTEX_NAME, const string END_VERTEX_NAME, int& weightOfTrip);
-    stack<string> DijkstrasAlgorithm(Vertex* startVertex, Vertex* endVertex, int& weightOfTrip);
+        stack<string> DijkstrasAlgorithm(const string START_VERTEX_NAME, const string END_VERTEX_NAME, int& weightOfTrip);
+        stack<string> DijkstrasAlgorithm(Vertex* startVertex, Vertex* endVertex, int& weightOfTrip);
 
-    void PrimsAlgorithm(const string START_VERTEX_NAME);
-    void PrimsAlgorithm(Vertex* startVertex);
+        queue<string> PrimsAlgorithm(const string START_VERTEX_NAME, int& weight);
+        queue<string> PrimsAlgorithm(Vertex* startVertex, int& weight);
 };
-
-#endif
-=======
-	stack<string> DijkstrasAlgorithm(const string START_VERTEX_NAME, const string END_VERTEX_NAME, int& weightOfTrip);
-	stack<string> DijkstrasAlgorithm(Vertex* startVertex, Vertex* endVertex, int& weightOfTrip);
-	
-	queue<string> PrimsAlgorithm(const string START_VERTEX_NAME, int& weight);
-	queue<string> PrimsAlgorithm(Vertex* startVertex, int& weight);
-};
-
 extern Graph graph;
 #endif
->>>>>>> origin/master

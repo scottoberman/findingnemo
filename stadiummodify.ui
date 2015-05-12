@@ -53,7 +53,7 @@
    <property name="geometry">
     <rect>
      <x>190</x>
-     <y>410</y>
+     <y>400</y>
      <width>140</width>
      <height>21</height>
     </rect>
@@ -86,7 +86,7 @@
    <property name="geometry">
     <rect>
      <x>188</x>
-     <y>381</y>
+     <y>371</y>
      <width>140</width>
      <height>21</height>
     </rect>
@@ -118,8 +118,8 @@
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>170</x>
-     <y>450</y>
+     <x>120</x>
+     <y>460</y>
      <width>75</width>
      <height>23</height>
     </rect>
@@ -220,7 +220,7 @@
    <property name="geometry">
     <rect>
      <x>100</x>
-     <y>380</y>
+     <y>370</y>
      <width>81</width>
      <height>16</height>
     </rect>
@@ -282,7 +282,7 @@
    <property name="geometry">
     <rect>
      <x>100</x>
-     <y>410</y>
+     <y>400</y>
      <width>81</width>
      <height>16</height>
     </rect>
@@ -324,14 +324,47 @@
   <widget class="QPushButton" name="pushButton_2">
    <property name="geometry">
     <rect>
-     <x>260</x>
-     <y>450</y>
+     <x>210</x>
+     <y>460</y>
      <width>131</width>
      <height>21</height>
     </rect>
    </property>
    <property name="text">
     <string>Modify Souvenirs</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="astroturf">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>430</y>
+     <width>140</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>Yes</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>No</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label_12">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>430</y>
+     <width>81</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Astroturf</string>
    </property>
   </widget>
  </widget>

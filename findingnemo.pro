@@ -30,7 +30,8 @@ SOURCES += main.cpp\
     souvenirdata.cpp \
     graph.cpp \
     souvedit.cpp \
-    addsouv.cpp
+    addsouv.cpp \
+    viewtotal.cpp
 
 HEADERS  += mainwindow.h \
     dreamvacation.h \
@@ -49,7 +50,8 @@ HEADERS  += mainwindow.h \
     souvenirdata.h \
     graph.h \
     souvedit.h \
-    addsouv.h
+    addsouv.h \
+    viewtotal.h
 
 FORMS    += mainwindow.ui \
     dreamvacation.ui \
@@ -63,8 +65,10 @@ FORMS    += mainwindow.ui \
     modifystadiuminfo.ui \
     stadiummodify.ui \
     souvedit.ui \
-    addsouv.ui
+    addsouv.ui \
+    viewtotal.ui
 
 DISTFILES += \
     baseballstadiuminformation.txt \
-    souvenirinfolist.txt
+    souvenirinfolist.txt \
+    souvenirpurchase.txt

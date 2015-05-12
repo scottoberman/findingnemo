@@ -179,9 +179,9 @@ void FileManager::updateList()
         outFile << "\n";
         outFile << "Astroturf - ";
         if (currentStadium.astroturf)
-            outFile << "";
+            outFile << "YES";
         else
-            outFile << "N/A";
+            outFile << "NO";
         if (count < totalStadiums)
         {
             outFile << "\n\n";

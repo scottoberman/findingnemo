@@ -103,7 +103,7 @@ void addNewTeam::on_pushButton_clicked()
         newStadium.streetAddress = ui->streetAddress->text().toStdString();
         newStadium.cityStateZip = ui->cityStateZip->text().toStdString();
         newStadium.phoneNumber  = ui->phoneNumber->text().toStdString();
-        newStadium.dateOpened   = "Opened - " + ui->monthDayYear->text().toStdString();
+        newStadium.dateOpened   = "Opened   - " + ui->monthDayYear->text().toStdString();
         stream << "Capacity - " << ui->seatingCapacity->value();
         newStadium.seatingCapacity = stream.str();
 
@@ -123,7 +123,14 @@ void addNewTeam::on_pushButton_clicked()
         {
             newStadium.americanLeague = false;
         }
-        newStadium.astroturf = false;
+        if (ui->astroturf->currentText() == "Yes")
+        {
+            newStadium.astroturf = true;
+        }
+        else
+        {
+            newStadium.astroturf = false;
+        }
         fileManager.addNewTeam(newStadiumName,newStadium);
         fileManager.updateList();
 

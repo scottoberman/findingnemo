@@ -28,13 +28,14 @@ stadiumModify::stadiumModify(QWidget *parent, QString stadiumName) :
     std::string seatingCapacity    = listOfStadiums[selectedStadium.toStdString()].seatingCapacity;
     bool nationalLeague = listOfStadiums[selectedStadium.toStdString()].nationalLeague;
     bool americanLeague = listOfStadiums[selectedStadium.toStdString()].americanLeague;
+    bool astroturf      = listOfStadiums[selectedStadium.toStdString()].astroturf;
     ui->stadiumName->setText(selectedStadium);
     ui->teamName->setText(QString::fromStdString(teamName));
     ui->streetAddress->setText(QString::fromStdString(stAddress));
     ui->cityStateZip->setText(QString::fromStdString(cityStateZip));
     ui->phoneNumber->setText(QString::fromStdString(phoneNumber));
 
-    ui->monthDayYear->setText(QString::fromStdString(dateOpened.substr(9,dateOpened.size())));
+    ui->monthDayYear->setText(QString::fromStdString(dateOpened.substr(11,dateOpened.size())));
 
 //    // modify seating capacity to become int
 
@@ -52,6 +53,10 @@ stadiumModify::stadiumModify(QWidget *parent, QString stadiumName) :
     if (!americanLeague)
     {
        ui->americanLeague->setCurrentIndex(1);
+    }
+    if (!astroturf)
+    {
+       ui->astroturf->setCurrentIndex(1);
     }
 }
 
@@ -101,7 +106,7 @@ void stadiumModify::on_pushButton_clicked()
         newStadium.streetAddress = ui->streetAddress->text().toStdString();
         newStadium.cityStateZip = ui->cityStateZip->text().toStdString();
         newStadium.phoneNumber  = ui->phoneNumber->text().toStdString();
-        newStadium.dateOpened   = "Opened - " + ui->monthDayYear->text().toStdString();
+        newStadium.dateOpened   = "Opened   - " + ui->monthDayYear->text().toStdString();
         stream << "Capacity - " << ui->seatingCapacity->value();
         newStadium.seatingCapacity = stream.str();
 
@@ -121,7 +126,14 @@ void stadiumModify::on_pushButton_clicked()
         {
             newStadium.americanLeague = false;
         }
-        newStadium.astroturf = false;
+        if (ui->astroturf->currentText() == "Yes")
+        {
+            newStadium.astroturf = true;
+        }
+        else
+        {
+            newStadium.astroturf = false;
+        }
         fileManager.addNewTeam(newStadiumName,newStadium);
         //graph.ChangeName(oldname, newname)
         fileManager.updateList();
