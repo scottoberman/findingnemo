@@ -1,0 +1,17 @@
+//sets a new stadium name to an old stadium
+void FileManager::setNewName(std::string oldStadiumName, std::string newStadiumName) {
+    std::map<std::string, stadiumInfo>::iterator it = listOfStadiums.begin();
+    for(; it != listOfStadiums.end(); it++) {
+    	if(it->first == oldStadiumName) {
+    		listOfStadiums[newStadiumName] = it->second;
+    		listOfStadiums.erase(it);
+    		
+    		
+    		
+    		//!!!!!!MIGHT NOT NEED. MIGHT BE IN OTHER CODE////////////////////
+    		graph.ChangeVertexName(oldStadiumName, newStadiumName);///////////
+    		//////////////////////////////////////////////////////////////////
+    		
+    	}
+    }//end - for
+}
