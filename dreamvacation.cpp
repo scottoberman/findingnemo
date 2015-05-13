@@ -8,6 +8,9 @@
 #include <stack>
 #include "globalvariables.h"
 #include "displaytrip2.h"
+#include <qdebug.h>
+#include "displaydream.h"
+#include <QListWidgetItem>
 dreamvacation::dreamvacation(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::dreamvacation)
@@ -29,17 +32,13 @@ dreamvacation::dreamvacation(QWidget *parent) :
     }
 
     stadiums = fmanager.getAllStadiums();
-    ui->tableWidget->setColumnCount(2);
-    ui->tableWidget->setHorizontalHeaderItem(0,new QTableWidgetItem(" "));
-    ui->tableWidget->setHorizontalHeaderItem(1,new QTableWidgetItem("Stadium Name"));
-    ui->tableWidget->verticalHeader()->setVisible(false);
     int i = 0;
     while (stadiums.size() >0)
     {
-        ui->tableWidget->insertRow(i);
-        QCheckBox *qcheck = new QCheckBox(ui->tableWidget);
-        ui->tableWidget->setCellWidget(i,0,qcheck);
-        ui->tableWidget->setItem(i,1,new QTableWidgetItem(QString::fromStdString(stadiums.front())));
+        QListWidgetItem* item = new QListWidgetItem(QString::fromStdString(stadiums.front()), ui->listWidget);
+        item->setFlags(item->flags() | Qt::ItemIsUserCheckable); // set checkable flag
+        item->setCheckState(Qt::Unchecked); // AND initialize check state
+
         stadiums.pop();
         i++;
     }
@@ -60,20 +59,39 @@ void dreamvacation::on_pushButton_clicked()
     FileManager fmanager;
     int i = 0;
     std::queue<std::string> stadiums = fmanager.getAllStadiums();
-    QCheckBox *cb;
+
+    qDebug() << selectedText;
+
     while (stadiums.size()>0)
     {
         std::stack<std::string> dijkstras;
-        cb = (QCheckBox*)ui->tableWidget->cellWidget(i,0);
-        if (cb->checkState() == Qt::Checked)
+
+        if (ui->listWidget->item(i)->checkState() == Qt::Checked)
         {
-            stack<string> dijkstras;
-            dijkstras = graph.DijkstrasAlgorithm(selectedText.toStdString(),stadiums.front(),weight);
-            weights.push_back(weight);
-            stacks.push_back(dijkstras);
+             qDebug() << QString::fromStdString(stadiums.front());
+             stack<string> dijkstras;
+             /**** temporarily ***/
+             std::stack<std::string> temp;
+             temp.push("Angels Stadium of Anaheim");
+             temp.push("Busch Stadium");
+             temp.push("Coors Field");
+             weight = 3030;
+             stacks.push_back(temp);
+             weights.push_back(weight);
+             /***  end of temporarily **/
+
+            //dijkstras = graph.DijkstrasAlgorithm(selectedText.toStdString(),stadiums.front(),weight);
+            //weights.push_back(weight);
+            //stacks.push_back(dijkstras);
         }
         stadiums.pop();
+        i++;
 
     }
-
+    std::ofstream outFile;
+    outFile.open("C:/Users/gdfgdf/Documents/findingnemo/savepurchases.txt");
+    outFile.close();
+    displaydream *dream = new displaydream(this,&stacks,&weights);
+    this->reject();
+    dream->show();
 }

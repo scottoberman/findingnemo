@@ -7,13 +7,15 @@
 #include "souvpurchases.h"
 #include <QVector>
 #include "viewtotal.h"
-purchasesouv::purchasesouv(QWidget *parent, std::string stadName) :
+
+purchasesouv::purchasesouv(QWidget *parent, std::string stadName, displaydream *dream) :
     QDialog(parent),
     ui(new Ui::purchasesouv)
 {
     ui->setupUi(this);
 
     stadium = stadName;
+    dreamdisplay = dream;
     // Set table columns, header, and remove vertical header
     ui->tableWidget->setColumnCount(3);
     ui->tableWidget->setHorizontalHeaderItem(0,new QTableWidgetItem("Quantity"));
@@ -45,6 +47,7 @@ purchasesouv::~purchasesouv()
 
 void purchasesouv::on_pushButton_clicked()
 {
+
    std::vector<purchases> *vecpurchase = new std::vector<purchases>;
    SouvenirData souvData;
    std::vector<souvenirInfo>::iterator getData;
@@ -69,7 +72,27 @@ void purchasesouv::on_pushButton_clicked()
          }
          i++;
    }
-   viewTotal *tot = new viewTotal(this,vecpurchase);
-   this->reject();
-   tot->show();
+   if (dreamdisplay!=0)
+   {
+        std::vector<purchases>::iterator it;
+        std::ofstream outFile;
+        outFile.open("C:/Users/gdfgdf/Documents/findingnemo/savepurchases.txt", std::fstream::app);
+        outFile << stadium << "\n";
+        for (it = vecpurchase->begin(); it != vecpurchase->end(); it++)
+        {
+            outFile << it->name << "\n";
+            outFile << it->quantity << "\n";
+            outFile << it->price << "\n";
+        }
+        outFile << "~\n";
+        outFile.close();
+        this->reject();
+        dreamdisplay->show();
+   }
+   else
+   {
+       viewTotal *tot = new viewTotal(this,vecpurchase);
+       this->reject();
+       tot->show();
+   }
 }

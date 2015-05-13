@@ -15,6 +15,9 @@ public:
     explicit endpurchase(QWidget *parent = 0);
     ~endpurchase();
 
+private slots:
+    void on_pushButton_clicked();
+
 private:
     Ui::endpurchase *ui;
 };

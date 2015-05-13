@@ -2,6 +2,7 @@
 #include "ui_viewsinglestadium.h"
 #include "viewstadiums.h"
 #include "filemanagerheader.h"
+#include "purchasesouv.h"
 viewsinglestadium::viewsinglestadium(QWidget *parent, std::string stad) :
     QDialog(parent),
     ui(new Ui::viewsinglestadium)
@@ -71,4 +72,11 @@ void viewsinglestadium::on_pushButton_clicked()
     viewStadiums *view = new viewStadiums;
     this->reject();
     view->show();
+}
+
+void viewsinglestadium::on_pushButton_2_clicked()
+{
+    purchasesouv *purchase = new purchasesouv(this,stadium);
+    this->reject();
+    purchase->show();
 }

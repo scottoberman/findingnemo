@@ -12,6 +12,7 @@
 #include "adminmenu.h"
 #include "viewstadiums.h"
 #include "primspage.h"
+#include "adminaccess.h"
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
@@ -59,8 +60,8 @@ void MainWindow::on_pushButton_3_clicked()
 
 void MainWindow::on_pushButton_4_clicked()
 {
-    adminMenu *admin = new adminMenu;
-    this->close();
+    adminAccess *admin = new adminAccess;
+    this->hide();
     admin->show();
 }
 

@@ -22,6 +22,7 @@ private slots:
 
 private:
     Ui::displaytrip *ui;
+    std::string lastVisit;
 };
 
 #endif // DISPLAYTRIP_H

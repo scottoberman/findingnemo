@@ -20,6 +20,7 @@ displaytrip::displaytrip(QWidget *parent,std::stack<std::string> *stk,int weight
         ui->tableWidget->setItem(i,0,new QTableWidgetItem(QString::fromStdString(stk->top())));
         stk->pop();
         ui->tableWidget->resizeColumnsToContents();
+        lastVisit = stk->top();
         i++;
     }
     ui->weight->setText(QString::number(weight));
@@ -39,7 +40,7 @@ void displaytrip::on_pushButton_clicked()
 
 void displaytrip::on_pushButton_2_clicked()
 {
-    purchasesouv *purchase = new purchasesouv(this,"Busch Stadium");
+    purchasesouv *purchase = new purchasesouv(this,lastVisit);
     this->reject();
     purchase->show();
 }

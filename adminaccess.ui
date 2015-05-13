@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>endpurchase</class>
- <widget class="QDialog" name="endpurchase">
+ <class>adminAccess</class>
+ <widget class="QDialog" name="adminAccess">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -13,56 +13,53 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QLabel" name="label">
+  <widget class="QLabel" name="error">
    <property name="geometry">
     <rect>
-     <x>80</x>
-     <y>60</y>
-     <width>261</width>
-     <height>81</height>
+     <x>120</x>
+     <y>30</y>
+     <width>191</width>
+     <height>51</height>
     </rect>
    </property>
    <property name="text">
-    <string>Thank you for your purchase</string>
+    <string>WRONG PASSWORD, TRY AGAIN</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
-     <x>80</x>
-     <y>140</y>
-     <width>261</width>
-     <height>41</height>
+     <x>70</x>
+     <y>110</y>
+     <width>81</width>
+     <height>21</height>
     </rect>
    </property>
    <property name="text">
-    <string>Please send a check written to &quot;FindingNemo Portal&quot;</string>
+    <string>PASSWORD</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_3">
+  <widget class="QLineEdit" name="lineEdit">
    <property name="geometry">
     <rect>
-     <x>80</x>
-     <y>180</y>
-     <width>341</width>
-     <height>31</height>
+     <x>140</x>
+     <y>110</y>
+     <width>171</width>
+     <height>21</height>
     </rect>
-   </property>
-   <property name="text">
-    <string>Address: 29340 Main St. Tustin, CA 92677 </string>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>100</x>
-     <y>240</y>
-     <width>171</width>
-     <height>41</height>
+     <x>140</x>
+     <y>180</y>
+     <width>121</width>
+     <height>51</height>
     </rect>
    </property>
    <property name="text">
-    <string>main menu</string>
+    <string>Enter</string>
    </property>
   </widget>
  </widget>

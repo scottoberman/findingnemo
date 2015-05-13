@@ -36,7 +36,10 @@ SOURCES += main.cpp\
     endpurchase.cpp \
     viewstadiums.cpp \
     primspage.cpp \
-    viewsinglestadium.cpp
+    viewsinglestadium.cpp \
+    displaydream.cpp \
+    adminaccess.cpp \
+    dreamtotal.cpp
 
 HEADERS  += mainwindow.h \
     dreamvacation.h \
@@ -61,7 +64,10 @@ HEADERS  += mainwindow.h \
     endpurchase.h \
     viewstadiums.h \
     primspage.h \
-    viewsinglestadium.h
+    viewsinglestadium.h \
+    displaydream.h \
+    adminaccess.h \
+    dreamtotal.h
 
 FORMS    += mainwindow.ui \
     dreamvacation.ui \
@@ -81,7 +87,10 @@ FORMS    += mainwindow.ui \
     viewstadiums.ui \
     displaytrip2.ui \
     primspage.ui \
-    viewsinglestadium.ui
+    viewsinglestadium.ui \
+    displaydream.ui \
+    adminaccess.ui \
+    dreamtotal.ui
 
 DISTFILES += \
     baseballstadiuminformation.txt \
