@@ -1,4 +1,4 @@
-AT&T Park
+﻿AT&T Park
 San Francisco Giants
 24 Willie Mays Plaza
 San Francisco, CA 94107
@@ -87,12 +87,12 @@ AmericanLeague - NO
 Astroturf - NO
 
 Dodger Stadium
-Gauchos
+Los Angeles Dodgers
 1000 Elysian Park Avenue
 Los Angeles, CA 90090
 (323) 224-1507
 Opened   - April 10, 1962
-Capacity - 10000
+Capacity - 56,000
 NationalLeague - YES
 AmericanLeague - NO
 Astroturf - NO
@@ -107,17 +107,6 @@ Capacity – 37,499 (night) & 37,071 (day)
 NationalLeague - NO
 AmericanLeague - YES
 Astroturf - NO
-
-Gauchos Stadium
-saddleback gauchos
-Marg. Pkway
-Mission Viejo, CA 92677
-5551212
-Opened   - May 12, 2015
-Capacity - 20000
-NationalLeague - YES
-AmericanLeague - YES
-Astroturf - YES
 
 Globe Life Park in Arlington
 Texas Rangers
