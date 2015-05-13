@@ -19,6 +19,10 @@ O.co Coliseum
 0
 
 AT&T Park
+Angels Stadium of Anaheim
+340
+
+AT&T Park
 Dodger Stadium
 340
 
@@ -36,7 +40,7 @@ Chase Field
 
 O.co Coliseum
 Angels Stadium of Anaheim
-350
+340
 
 Angels Stadium of Anaheim
 Dodger Stadium
@@ -48,7 +52,7 @@ Petco Park
 
 Angels Stadium of Anaheim
 Target Field
-500
+1500
 
 Dodger Stadium
 Petco Park
