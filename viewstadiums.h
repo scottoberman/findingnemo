@@ -15,6 +15,9 @@ public:
     explicit viewStadiums(QWidget *parent = 0);
     ~viewStadiums();
 
+private slots:
+    void on_pushButton_clicked();
+
 private:
     Ui::viewStadiums *ui;
 };

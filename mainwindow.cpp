@@ -11,12 +11,13 @@
 #include "dreamvacation.h"
 #include "adminmenu.h"
 #include "viewstadiums.h"
-
+#include "primspage.h"
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+
 }
 
 MainWindow::~MainWindow()
@@ -68,4 +69,11 @@ void MainWindow::on_pushButton_5_clicked()
     viewStadiums *viewstad = new viewStadiums;
     this->hide();
     viewstad->show();
+}
+
+void MainWindow::on_pushButton_6_clicked()
+{
+    primsPage *prims = new primsPage;
+    this->hide();
+    prims->show();
 }

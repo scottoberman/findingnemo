@@ -2,12 +2,27 @@
 #include "ui_displaytrip.h"
 #include "mainwindow.h"
 #include "purchasesouv.h"
+#include <qdebug.h>
 
-displaytrip::displaytrip(QWidget *parent) :
+displaytrip::displaytrip(QWidget *parent,std::stack<std::string> *stk,int weight) :
     QDialog(parent),
     ui(new Ui::displaytrip)
 {
+
     ui->setupUi(this);
+    ui->tableWidget->setColumnCount(1);
+    ui->tableWidget->setHorizontalHeaderItem(0,new QTableWidgetItem("Order you are visiting"));
+
+    int i = 0;
+    while (stk->size() >0)
+    {
+        ui->tableWidget->insertRow(i);
+        ui->tableWidget->setItem(i,0,new QTableWidgetItem(QString::fromStdString(stk->top())));
+        stk->pop();
+        ui->tableWidget->resizeColumnsToContents();
+        i++;
+    }
+    ui->weight->setText(QString::number(weight));
 }
 
 displaytrip::~displaytrip()

@@ -1,6 +1,6 @@
 #ifndef DISPLAYTRIP_H
 #define DISPLAYTRIP_H
-
+#include <stack>
 #include <QDialog>
 
 namespace Ui {
@@ -12,7 +12,7 @@ class displaytrip : public QDialog
     Q_OBJECT
 
 public:
-    explicit displaytrip(QWidget *parent = 0);
+    explicit displaytrip(QWidget *parent = 0,std::stack<std::string> *stk = 0,int weight = 0);
     ~displaytrip();
 
 private slots:

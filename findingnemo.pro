@@ -34,7 +34,8 @@ SOURCES += main.cpp\
     viewtotal.cpp \
     globalvariables.cpp \
     endpurchase.cpp \
-    viewstadiums.cpp
+    viewstadiums.cpp \
+    primspage.cpp
 
 HEADERS  += mainwindow.h \
     dreamvacation.h \
@@ -57,7 +58,8 @@ HEADERS  += mainwindow.h \
     viewtotal.h \
     globalvariables.h \
     endpurchase.h \
-    viewstadiums.h
+    viewstadiums.h \
+    primspage.h
 
 FORMS    += mainwindow.ui \
     dreamvacation.ui \
@@ -74,7 +76,9 @@ FORMS    += mainwindow.ui \
     addsouv.ui \
     viewtotal.ui \
     endpurchase.ui \
-    viewstadiums.ui
+    viewstadiums.ui \
+    displaytrip2.ui \
+    primspage.ui
 
 DISTFILES += \
     baseballstadiuminformation.txt \

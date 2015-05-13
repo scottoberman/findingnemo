@@ -217,7 +217,7 @@ stack<string> Graph::DijkstrasAlgorithm(Vertex* startVertex, Vertex* endVertex, 
 
         visitedVertices.push_back(activeVertex);
         nextEdge = activeVertex->connections.begin();
-        if (visitedVertices.size() != vertices.size())
+        if (visitedVertices.size() < vertices.size() - 1)
         {
             while (nextEdge != activeVertex->connections.end() && (*nextEdge)->GetOtherVertex(activeVertex)->HasBeenVisited(visitedVertices))
             {

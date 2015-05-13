@@ -44,6 +44,7 @@ public:
     //modifies the file with the most current stadium information
     void updateList();
     void setNewName(std::string oldStadiumName, std::string newStadiumName);
+    void populateEdgeWeights();
     //will change the team name of the stadium passed in
 
 private:

@@ -47,7 +47,7 @@ Petco Park
 110
 
 Angels Stadium of Anaheim
-Target Field1
+Target Field
 500
 
 Dodger Stadium
@@ -95,7 +95,7 @@ Kauffman Stadium
 460
 
 Globe Life Park in Arlington
-Turner Field 
+Turner Field
 740
 
 Tropicana Field
@@ -107,7 +107,7 @@ Great America Ball Park
 790
 
 Marlins Park
-Turner Field 
+Turner Field
 600
 
 Marlins Park
@@ -122,15 +122,15 @@ Marlins Park
 Fenway Park
 1255
 
-Turner Field 
+Turner Field
 Great America Ball Park
 375
 
-Turner Field 
+Turner Field
 Nationals Park
 560
 
-Turner Field 
+Turner Field
 Oriole Park at Camden Yards
 560
 

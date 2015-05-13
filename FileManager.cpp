@@ -8,6 +8,7 @@
 #include <sstream>
 #include <fstream>
 #include <QDebug>
+#include "globalvariables.h"
 /*COMMENT ABOUT THE FILE INFO: I couldn't think of a much better way than to
  * simply include a boolean stating if the team is a national or American
  * league team, as well as a boolean to state if the stadium has astroturf or
@@ -42,6 +43,9 @@ FileManager::FileManager() {
         std::getline(inFile, newStadium.dateOpened);
         std::getline(inFile, newStadium.seatingCapacity);
 
+        graph.SetVertex(newStadiumName);
+        qDebug () << graph.vertices.size();
+
         //checking for national, American and astroturf booleans
         for(int i = 0; i < 3; i++) {
             std::string yesOrNo;
@@ -57,7 +61,7 @@ FileManager::FileManager() {
                     break;
             }//end - if
         }//end - for
-
+qDebug () << graph.vertices.size();
         //resetting for the next stadium
         inFile.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 
@@ -65,6 +69,9 @@ FileManager::FileManager() {
         listOfStadiums[newStadiumName] = newStadium;
 
     }//end - while !inFile.eof()
+    qDebug () << "blah" << graph.vertices.size();
+    populateEdgeWeights();
+    qDebug () <<"guh" << graph.vertices.size();
 }// end - FileManager - default constructor
 
 FileManager::~FileManager() {}//end - default destructor
@@ -209,8 +216,34 @@ void FileManager::setNewName(std::string oldStadiumName, std::string newStadiumN
             listOfStadiums[newStadiumName] = it->second;
             listOfStadiums.erase(it);
 
-            //graph.ChangeVertexName(oldStadiumName, newStadiumName);
+            graph.ChangeVertexName(oldStadiumName, newStadiumName);
 
         }
     }//end - for
 }
+/*this method will call the graph class' SetEdge method to set all the edges
+ * based off the file WeightEdgeInformation.txt
+ */
+void FileManager::populateEdgeWeights() {
+    std::ifstream inFile;
+
+    inFile.open("C:/Users/gdfgdf/Documents/findingnemo/WeightEdgeInformation.txt");
+//	if (inFile.is_open())
+//		qDebug() << "OPENED";
+//	else
+//		qDebug() << "NOPE";
+
+    while(!inFile.eof()) {
+        std::string fromStadium;
+        std::string toStadium;
+        int weight;
+
+        std::getline(inFile, fromStadium);
+        std::getline(inFile, toStadium);
+        inFile >> weight;
+        inFile.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+        inFile.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+
+        graph.SetVertices(fromStadium, toStadium, weight);
+    }//end - while
+}//end - populateEdgeWeights

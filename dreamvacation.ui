@@ -52,6 +52,26 @@ padding:5px;
     <string>Visit</string>
    </property>
   </widget>
+  <widget class="QComboBox" name="comboBox">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>70</y>
+     <width>301</width>
+     <height>41</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>120</y>
+     <width>251</width>
+     <height>111</height>
+    </rect>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>
