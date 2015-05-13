@@ -38,26 +38,39 @@ border: 1px solid #333;
      <property name="geometry">
       <rect>
        <x>50</x>
-       <y>110</y>
+       <y>70</y>
        <width>301</width>
        <height>51</height>
       </rect>
      </property>
      <property name="text">
-      <string>Visit Major League Stadiums / Dream Vacation</string>
+      <string>Visit Major League Stadiums</string>
      </property>
     </widget>
     <widget class="QPushButton" name="pushButton_5">
      <property name="geometry">
       <rect>
        <x>50</x>
-       <y>30</y>
+       <y>10</y>
        <width>301</width>
        <height>51</height>
       </rect>
      </property>
      <property name="text">
       <string>View All Stadiums</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_2">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>130</y>
+       <width>301</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Dream Vacation</string>
      </property>
     </widget>
    </widget>

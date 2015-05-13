@@ -17,6 +17,7 @@ public:
 
 private slots:
     void on_pushButton_clicked();
+    void tableItemClicked(int row, int column);
 
 private:
     Ui::viewStadiums *ui;

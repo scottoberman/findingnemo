@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>primsPage</class>
- <widget class="QDialog" name="primsPage">
+ <class>viewsinglestadium</class>
+ <widget class="QDialog" name="viewsinglestadium">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
+    <width>689</width>
     <height>300</height>
    </rect>
   </property>
@@ -17,39 +17,36 @@
    <property name="geometry">
     <rect>
      <x>100</x>
-     <y>60</y>
-     <width>81</width>
-     <height>101</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>PRIMS RESULT:</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="prims">
-   <property name="geometry">
-    <rect>
-     <x>230</x>
-     <y>100</y>
-     <width>61</width>
-     <height>21</height>
+     <y>10</y>
+     <width>211</width>
+     <height>41</height>
     </rect>
    </property>
    <property name="text">
     <string/>
    </property>
   </widget>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>80</y>
+     <width>671</width>
+     <height>81</height>
+    </rect>
+   </property>
+  </widget>
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>90</x>
-     <y>170</y>
-     <width>141</width>
-     <height>61</height>
+     <x>290</x>
+     <y>230</y>
+     <width>101</width>
+     <height>51</height>
     </rect>
    </property>
    <property name="text">
-    <string>main menu</string>
+    <string>Back to List</string>
    </property>
   </widget>
  </widget>
