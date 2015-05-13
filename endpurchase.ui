@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>viewTotal</class>
- <widget class="QDialog" name="viewTotal">
+ <class>endpurchase</class>
+ <widget class="QDialog" name="endpurchase">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -13,53 +13,43 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QTableWidget" name="tableWidget">
+  <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>20</x>
-     <y>50</y>
-     <width>361</width>
-     <height>191</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QLabel" name="total">
-   <property name="geometry">
-    <rect>
-     <x>280</x>
-     <y>260</y>
-     <width>91</width>
-     <height>31</height>
+     <x>80</x>
+     <y>60</y>
+     <width>261</width>
+     <height>81</height>
     </rect>
    </property>
    <property name="text">
-    <string/>
+    <string>Thank you for your purchase</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
-     <x>240</x>
-     <y>270</y>
-     <width>47</width>
-     <height>13</height>
+     <x>80</x>
+     <y>140</y>
+     <width>261</width>
+     <height>41</height>
     </rect>
    </property>
    <property name="text">
-    <string>Total:</string>
+    <string>Please send a check written to &quot;FindingNemo Portal&quot;</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QLabel" name="label_3">
    <property name="geometry">
     <rect>
-     <x>110</x>
-     <y>260</y>
-     <width>111</width>
+     <x>80</x>
+     <y>180</y>
+     <width>341</width>
      <height>31</height>
     </rect>
    </property>
    <property name="text">
-    <string>Purchase</string>
+    <string>Address: 29340 Main St. Tustin, CA 92677 </string>
    </property>
   </widget>
  </widget>

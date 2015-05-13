@@ -202,3 +202,15 @@ void FileManager::deleteStadium(std::string stadiumName)
 {
     listOfStadiums.erase(stadiumName);
 }
+void FileManager::setNewName(std::string oldStadiumName, std::string newStadiumName) {
+    std::map<std::string, stadiumInfo>::iterator it = listOfStadiums.begin();
+    for(; it != listOfStadiums.end(); it++) {
+        if(it->first == oldStadiumName) {
+            listOfStadiums[newStadiumName] = it->second;
+            listOfStadiums.erase(it);
+
+            //graph.ChangeVertexName(oldStadiumName, newStadiumName);
+
+        }
+    }//end - for
+}

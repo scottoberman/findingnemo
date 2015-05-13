@@ -1,3 +1,14 @@
+AT&T Park
+San Francisco Giants
+24 Willie Mays Plaza
+San Francisco, CA 94107
+(415) 972-2000
+Opened   - April 11, 2000
+Capacity - 41915
+NationalLeague - YES
+AmericanLeague - NO
+Astroturf - NO
+
 Angels Stadium of Anaheim
 Los Angeles Angels of Anaheim
 2000 E Gene Autry Way,
@@ -315,15 +326,4 @@ Opened   - April 16, 2009
 Capacity - 50,291
 NationalLeague - NO
 AmericanLeague - YES
-Astroturf - NO
-
-AT&T Park
-San Francisco Giants
-24 Willie Mays Plaza
-San Francisco, CA 94107
-(415) 972-2000
-Opened   - April 11, 2000
-Capacity - 41,915
-NationalLeague - YES
-AmericanLeague - NO
 Astroturf - NO

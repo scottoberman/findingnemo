@@ -8,7 +8,7 @@
 #include <QDebug>
 #include "filemanagerheader.h"
 
-Graph graph;
+
 
 int main(int argc, char *argv[])
 {

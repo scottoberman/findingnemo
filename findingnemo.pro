@@ -31,7 +31,10 @@ SOURCES += main.cpp\
     graph.cpp \
     souvedit.cpp \
     addsouv.cpp \
-    viewtotal.cpp
+    viewtotal.cpp \
+    globalvariables.cpp \
+    endpurchase.cpp \
+    viewstadiums.cpp
 
 HEADERS  += mainwindow.h \
     dreamvacation.h \
@@ -51,7 +54,10 @@ HEADERS  += mainwindow.h \
     graph.h \
     souvedit.h \
     addsouv.h \
-    viewtotal.h
+    viewtotal.h \
+    globalvariables.h \
+    endpurchase.h \
+    viewstadiums.h
 
 FORMS    += mainwindow.ui \
     dreamvacation.ui \
@@ -66,7 +72,9 @@ FORMS    += mainwindow.ui \
     stadiummodify.ui \
     souvedit.ui \
     addsouv.ui \
-    viewtotal.ui
+    viewtotal.ui \
+    endpurchase.ui \
+    viewstadiums.ui
 
 DISTFILES += \
     baseballstadiuminformation.txt \

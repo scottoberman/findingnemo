@@ -10,6 +10,7 @@
 #include "majorleaguestadiums.h"
 #include "dreamvacation.h"
 #include "adminmenu.h"
+#include "viewstadiums.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -60,4 +61,11 @@ void MainWindow::on_pushButton_4_clicked()
     adminMenu *admin = new adminMenu;
     this->close();
     admin->show();
+}
+
+void MainWindow::on_pushButton_5_clicked()
+{
+    viewStadiums *viewstad = new viewStadiums;
+    this->hide();
+    viewstad->show();
 }

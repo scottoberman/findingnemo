@@ -45,7 +45,7 @@ purchasesouv::~purchasesouv()
 
 void purchasesouv::on_pushButton_clicked()
 {
-   QVector<purchases> *purchase;
+   std::vector<purchases> *vecpurchase = new std::vector<purchases>;
    SouvenirData souvData;
    std::vector<souvenirInfo>::iterator getData;
    std::map< std::string, std::vector<souvenirInfo> > listOfSouvenirs = souvData.getAllInfoAt(stadium);
@@ -65,11 +65,11 @@ void purchasesouv::on_pushButton_clicked()
              newPurchase.name = listOfSouvenirs.at(stadium).at(i).item;
              newPurchase.quantity = quantity;
              newPurchase.price    = listOfSouvenirs.at(stadium).at(i).price;
-             purchase->push_back(newPurchase);
+             vecpurchase->push_back(newPurchase);
          }
          i++;
    }
-   viewTotal *tot = new viewTotal(this,purchase);
+   viewTotal *tot = new viewTotal(this,vecpurchase);
    this->reject();
    tot->show();
 }
