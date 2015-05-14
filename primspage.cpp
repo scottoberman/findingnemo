@@ -7,10 +7,11 @@ primsPage::primsPage(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::primsPage)
 {
+	FileManager fmanager;
     ui->setupUi(this);
     int weight = 0;
    graph.PrimsAlgorithm("Angels Stadium of Anaheim",weight);
-   // ui->prims->setText(QString::number(6810));
+   ui->prims->setText(QString::number(weight));
 }
 
 primsPage::~primsPage()

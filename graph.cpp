@@ -379,12 +379,12 @@ queue<string> Graph::PrimsAlgorithm(const string START_VERTEX_NAME, int& weight)
 
     while (!foundStart && vertexIterator != vertices.end())
     {
-if ((*vertexIterator)->name == START_VERTEX_NAME)
-{
-	foundStart = true;
-	startVertex = (*vertexIterator);
-}
-vertexIterator++;
+		if ((*vertexIterator)->name == START_VERTEX_NAME)
+		{
+			foundStart = true;
+			startVertex = (*vertexIterator);
+		}
+		vertexIterator++;
 
 	}
 
@@ -445,12 +445,14 @@ queue<string> Graph::PrimsAlgorithm(Vertex* startVertex, int& weight)
 	qDebug() << "Outputting MST: ";
 	while (connectionsIterator != connectionsToTake.end())
 	{
-		cout << (*connectionsIterator)->vertices[0]->name << " connected to " << (*connectionsIterator)->vertices[1]->name << endl;
-		connectionsIterator++;
+		qDebug() << QString::fromStdString((*connectionsIterator)->vertices[0]->name) << " connected to " << QString::fromStdString((*connectionsIterator)->vertices[1]->name);
 
 		MST.push((*connectionsIterator)->vertices[0]->name + " connected to " + (*connectionsIterator)->vertices[1]->name);
+
+		connectionsIterator++;
 	}
-	qDebug() << "Distance traveled is: " + totalDistance;
+
+	qDebug() << "Prims Distance: " +  QString::fromStdString(to_string(totalDistance));
 
 	weight = totalDistance;
 
