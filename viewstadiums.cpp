@@ -39,7 +39,7 @@ viewStadiums::viewStadiums(QWidget *parent) :
         //connect(ui->tableWidget, SIGNAL(cellClicked(int, int)), this, SLOT(myCellClicked(int, int)));
         stadiumInfo getData = it->second;
 
-        QString openedDate = QString::fromStdString(getData.dateOpened.substr(getData.dateOpened.size(),-5));
+        QString openedDate = QString::fromStdString(getData.dateOpened.substr(11,getData.dateOpened.size()-1));
 
         ui->tableWidget->insertRow(i);
         ui->tableWidget->setItem(i,0,new QTableWidgetItem(QString::fromStdString(it->first)));
