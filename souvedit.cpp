@@ -24,10 +24,10 @@ SouvEdit::SouvEdit(QWidget *parent, QString selectedStadium) :
     std::map< std::string, std::vector<souvenirInfo> > listOfSouvenirs = souvData.getAllInfoAt(selectedStadium.toStdString());
     std::vector<souvenirInfo>::iterator getData;
     int i = 0;
-    // Each each wine to the table
     for(getData = listOfSouvenirs.at(selectedStadium.toStdString()).begin();
         getData != listOfSouvenirs.at(selectedStadium.toStdString()).end(); getData++)
     {
+
         ui->tableWidget->insertRow(i);
         QDoubleSpinBox *spinBox = new QDoubleSpinBox(ui->tableWidget);
         QCheckBox *qcheck = new QCheckBox(ui->tableWidget);
@@ -37,6 +37,7 @@ SouvEdit::SouvEdit(QWidget *parent, QString selectedStadium) :
         ui->tableWidget->setCellWidget(i,2,spinBox);
         i++;
     }
+
     //ui->content->setText(QString::fromStdString(getData));
 }
 

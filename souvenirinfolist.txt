@@ -2,11 +2,11 @@ AT&T Park
 Baseball cap
 25.99
 Baseball bat
-30.11
+35.35
 Team pennant
-0
+12.99
 Autographed baseball
-0
+19.99
 ~
 Angels Stadium of Anaheim
 Baseball cap
@@ -36,7 +36,7 @@ Baseball bat
 Team pennant
 12.99
 Autographed baseball
-19.99 
+19.99
 ~
 Citi Field
 Baseball cap
@@ -258,7 +258,7 @@ Team pennant
 Autographed baseball
 19.99
 ~
-Turner Field 
+Turner Field
 Baseball cap
 25.99
 Baseball bat
