@@ -29,21 +29,25 @@ void Vertex::AddConnection(Edge* connection)
 }
 
 // Outputs every edge associated with a vertex
-void Vertex::OutputAllConnections()
+string Vertex::OutputAllConnections()
 {
     vector<Edge*>::const_iterator connectionsIterator = connections.begin();
     int currentConnection = 0;
 
-    cout << name << " is connected to: " << endl;
+	string connectionsStr;
+
+
+	connectionsStr.append(name + " is connected to: \n");
 
     while (connectionsIterator != connections.end())
     {
-        cout << (*connectionsIterator)->GetOtherVertex(this)->name
-             << " Distance between vertices is " << (*connectionsIterator)->weight << endl;
+		connectionsStr.append((*connectionsIterator)->GetOtherVertex(this)->name + " Distance between vertices is " + to_string((*connectionsIterator)->weight) + "\n");
         connectionsIterator++;
-
     }
-    cout << endl;
+
+	connectionsStr.append("\n");
+
+	return connectionsStr;
 
 }
 

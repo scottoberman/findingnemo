@@ -35,7 +35,7 @@ public:
 
     void AddConnection(Edge* connection);
     Vertex* GetOtherVertex(Edge* connection);
-    void OutputAllConnections();
+	string OutputAllConnections();
     bool HasBeenVisited(vector<Vertex*> visitedVertices);
 };
 
