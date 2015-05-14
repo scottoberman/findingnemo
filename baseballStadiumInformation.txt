@@ -1,9 +1,9 @@
-Angels Stadium of Anaheim
+﻿Angels Stadium of Anaheim
 Los Angeles Angels of Anaheim
 2000 E Gene Autry Way,
 Anaheim, CA 92806
 (714)940-2000
-Opened   -  April 19, 1968
+Opened   -  1968/4/19 
 Capacity - 0
 NationalLeague - NO
 AmericanLeague - YES
@@ -14,7 +14,7 @@ St. Louis Cardinals
 700 Clark Street
 St. Louis, MO 63102
 (314) 345-9600
-Opened   - April 10, 2006
+Opened   - 2006/4/10
 Capacity - 46,861
 NationalLeague - YES
 AmericanLeague - NO
@@ -25,7 +25,7 @@ Arizona Diamondbacks
 401 East Jefferson Street
 Phoenix, AZ 85004
 (602) 462-6500
-Opened   - March 31, 1998
+Opened   - 1998/6/31
 Capacity - 48633
 NationalLeague - YES
 AmericanLeague - NO
@@ -36,7 +36,7 @@ New York Mets
 126th St. & Roosevelt Ave.
 Queens, NY 11368
 (718) 507-6387
-Opened   - April 13, 2009
+Opened   - 2009/4/13
 Capacity - 41,922
 NationalLeague - YES
 AmericanLeague - NO
@@ -47,7 +47,7 @@ Philadelphia Phillies
 1 Citizens Bank Way
 Philadelphia, PA 19148
 (215) 463-1000
-Opened   - April 3, 2004
+Opened   - 2004/4/3
 Capacity - 43,651
 NationalLeague - YES
 AmericanLeague - NO
@@ -58,7 +58,7 @@ Detroit Tigers
 2100 Woodward Ave,
 Detroit, MI 48201
 (313) 962-4000
-Opened   – April 11, 2000
+Opened   – 2000/4/11
 Capacity – 41,681
 NationalLeague - NO
 AmericanLeague - YES
@@ -69,7 +69,7 @@ Colorado Rockies
 2001 Blake St
 Denver, CO 80205
 (303) 292-0200
-Opened   - April 26, 1995
+Opened   - 1995/4/26
 Capacity - 50,480
 NationalLeague - YES
 AmericanLeague - NO
@@ -80,7 +80,7 @@ Los Angeles Dodgers
 1000 Elysian Park Avenue
 Los Angeles, CA 90090
 (323) 224-1507
-Opened   - April 10, 1962
+Opened   - 1962/4/10
 Capacity - 56,000
 NationalLeague - YES
 AmericanLeague - NO
@@ -91,7 +91,7 @@ Boston Red Sox
 4 Yawkey Way,
 Boston, MA 02215
 (877) 733-7699
-Opened   – April 20, 1912
+Opened   – 1912/4/20
 Capacity – 37,499 (night) & 37,071 (day)
 NationalLeague - NO
 AmericanLeague - YES
@@ -102,7 +102,7 @@ Texas Rangers
 1000 Ballpark Way,
 Arlington, TX 76011
 (817) 273-5222
-Opened   – April 1, 1994
+Opened   – 1994/4/1
 Capacity – 48,114
 NationalLeague - NO
 AmericanLeague - YES
@@ -113,7 +113,7 @@ Cincinnati Reds
 100 Joe Nuxhall Way
 Cincinnati, OH 45202
 (513) 381-7337
-Opened   - March 31, 2003
+Opened   - 2003/3/31
 Capacity - 42,319
 NationalLeague - YES
 AmericanLeague - NO
@@ -124,7 +124,7 @@ Kansas City Royals
 1 Royal Way
 Kansas City, MO 64129
 (816) 921-8000
-Opened   – April 10, 1973
+Opened   – 1973/4/10
 Capacity – 37,903
 NationalLeague - NO
 AmericanLeague - YES
@@ -135,7 +135,7 @@ Miami Marlins
 501 Marlins Way
 Miami, FL 33125
 (305)480-1300
-Opened   - April 4, 2012
+Opened   - 2012/4/4
 Capacity - 37,442
 NationalLeague - YES
 AmericanLeague - NO
@@ -146,7 +146,7 @@ Milwaukee Brewers
 1 Brewers Way
 Milwaukee, WI 53214
 (414) 902-4400
-Opened   - April 6, 2001
+Opened   - 2001/4/6
 Capacity - 41,900
 NationalLeague - YES
 AmericanLeague - NO
@@ -157,7 +157,7 @@ Houston Astros
 501 Crawford St,
 Houston, TX 77002
 (713) 259-8000
-Opened   - March 30, 2000
+Opened   - 2000/3/30
 Capacity - 42,060
 NationalLeague - NO
 AmericanLeague - YES
@@ -168,7 +168,7 @@ Washington Nationals
 1500 S Capitol St SE
 Washington, DC 20003
 (202) 675-6287
-Opened   - March 30, 2008
+Opened   - 2008/3/30
 Capacity - 41,418
 NationalLeague - YES
 AmericanLeague - NO
@@ -179,7 +179,7 @@ Oakland Athletics
 7000 Coliseum Way
 Oakland, CA 94621
 (510) 569-2121
-Opened   - September 18, 1966
+Opened   - 1966/9/18
 Capacity - 37,090 (April - August) & 55,945 (Sept - Jan)
 NationalLeague - NO
 AmericanLeague - YES
@@ -190,7 +190,7 @@ Baltimore Orioles
 333 West Camden Street
 Baltimore, MD 21201
 (410) 685-9800
-Opened   - April 6, 1992
+Opened   - 1992/4/16
 Capacity - 48,187
 NationalLeague - NO
 AmericanLeague - YES
@@ -201,7 +201,7 @@ Pittsburgh Pirates
 115 Federal St
 Pittsburgh, PA 15212
 (412) 321-2827
-March 31, 2001
+Opened   - 2001/3/31
 Capacity - 38,362
 NationalLeague - YES
 AmericanLeague - NO
@@ -212,7 +212,7 @@ San Diego Padres
 19 Tony Gwynn Drive
 San Diego, CA 92101
 (619) 795-5000
-Opened   - April 8, 2004
+Opened   - 2004/4/8
 Capacity - 42,524
 NationalLeague - YES
 AmericanLeague - NO
@@ -223,7 +223,7 @@ Cleveland Indians
 2401 Ontario Street
 Cleveland, OH 44115
 (216) 420-4487
-Opened   - April 2, 1994
+Opened   - 1994/4/2
 Capacity - 42,404
 NationalLeague - NO
 AmericanLeague - YES
@@ -234,7 +234,7 @@ Toronto Blue Jays
 1 Blue Jays Way
 Toronto, Ontario, Canada M5V1J3
 +1 416-341-1000
-Opened   - June 3, 1989
+Opened   - 1989/6/3
 Capacity - 49,282
 NationalLeague - NO
 AmericanLeague - YES
@@ -245,7 +245,7 @@ Seattle Mariners
 1516 First Avenue South
 Seattle, WA 98134
 (206) 346-4000
-Opened   - July 15, 1999
+Opened   - 1999/7/15
 Capacity - 47,476
 NationalLeague - NO
 AmericanLeague - YES
@@ -256,7 +256,7 @@ Minnesota Twins
 353 N 5th St
 Minneapolis, MN 55403
 (800) 338-9467
-Opened   - April 12, 2010
+Opened   - 2010/4/12
 Capacity - 39,021
 NationalLeague - NO
 AmericanLeague - YES
@@ -267,7 +267,7 @@ Tampa Bay Rays
 1 Tropicana Dr
 St. Petersburg, FL 33705
 (727) 825-3137
-Opened   - March 3, 1990
+Opened   - 1990/3/3
 Capacity - 31,042 (Regular Season) 42,735 (Postseason)
 NationalLeague - NO
 AmericanLeague - YES
@@ -278,7 +278,7 @@ Atlanta Braves
 755 Hank Aaron Drive
 Atlanta, GA 30315
 (404) 522-7630
-Opened   - March 29, 1997
+Opened   - 1997/3/29
 Capacity - 49,586
 NationalLeague - YES
 AmericanLeague - NO
@@ -289,7 +289,7 @@ Chicago White Sox
 333 West 35th Street
 Chicago, IL 60616
 (312) 674-1000
-Opened   - April 18, 1991
+Opened   - 1991/4/18
 Capacity - 40,615
 NationalLeague - NO
 AmericanLeague - YES
@@ -300,7 +300,7 @@ Chicago Cubs
 1060 West Addison Street
 Chicago, IL 60613
 (773) 404-2827
-Opened   - April 23, 1914
+Opened   - 1914/4/23
 Capacity - 42,374
 NationalLeague - YES
 AmericanLeague - NO
@@ -311,7 +311,7 @@ New York Yankees
 1 E 161st St
 South Bronx, NY 10451
 (718) 293-4300
-Opened   - April 16, 2009
+Opened   - 2009/4/16
 Capacity - 50,291
 NationalLeague - NO
 AmericanLeague - YES
@@ -322,7 +322,7 @@ San Francisco Giants
 24 Willie Mays Plaza
 San Francisco, CA 94107
 (415) 972-2000
-Opened   - April 11, 2000
+Opened   - 2000/4/11
 Capacity - 41915
 NationalLeague - YES
 AmericanLeague - NO
