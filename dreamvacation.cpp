@@ -70,19 +70,10 @@ void dreamvacation::on_pushButton_clicked()
         {
              qDebug() << QString::fromStdString(stadiums.front());
              stack<string> dijkstras;
-             /**** temporarily ***/
-             std::stack<std::string> temp;
-             temp.push("Angels Stadium of Anaheim");
-             temp.push("Busch Stadium");
-             temp.push("Coors Field");
-             weight = 3030;
-             stacks.push_back(temp);
-             weights.push_back(weight);
-             /***  end of temporarily **/
 
-            //dijkstras = graph.DijkstrasAlgorithm(selectedText.toStdString(),stadiums.front(),weight);
-            //weights.push_back(weight);
-            //stacks.push_back(dijkstras);
+             dijkstras = graph.DijkstrasAlgorithm(selectedText.toStdString(),stadiums.front(),weight);
+             stacks.push_back(dijkstras);
+             weights.push_back(weight);
         }
         stadiums.pop();
         i++;

@@ -18,9 +18,9 @@ displaytrip::displaytrip(QWidget *parent,std::stack<std::string> *stk,int weight
     {
         ui->tableWidget->insertRow(i);
         ui->tableWidget->setItem(i,0,new QTableWidgetItem(QString::fromStdString(stk->top())));
-        stk->pop();
         ui->tableWidget->resizeColumnsToContents();
         lastVisit = stk->top();
+        stk->pop();
         i++;
     }
     ui->weight->setText(QString::number(weight));
