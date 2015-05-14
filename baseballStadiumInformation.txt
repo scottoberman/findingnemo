@@ -1,4 +1,4 @@
-﻿Angels Stadium of Anaheim
+Angels Stadium of Anaheim
 Los Angeles Angels of Anaheim
 2000 E Gene Autry Way,
 Anaheim, CA 92806
@@ -58,7 +58,7 @@ Detroit Tigers
 2100 Woodward Ave,
 Detroit, MI 48201
 (313) 962-4000
-Opened   – 2000/4/11
+Opened   - 2000/4/11
 Capacity – 41,681
 NationalLeague - NO
 AmericanLeague - YES
@@ -91,7 +91,7 @@ Boston Red Sox
 4 Yawkey Way,
 Boston, MA 02215
 (877) 733-7699
-Opened   – 1912/4/20
+Opened   - 1912/4/20
 Capacity – 37,499 (night) & 37,071 (day)
 NationalLeague - NO
 AmericanLeague - YES
@@ -102,7 +102,7 @@ Texas Rangers
 1000 Ballpark Way,
 Arlington, TX 76011
 (817) 273-5222
-Opened   – 1994/4/1
+Opened   - 1994/4/1
 Capacity – 48,114
 NationalLeague - NO
 AmericanLeague - YES
@@ -124,7 +124,7 @@ Kansas City Royals
 1 Royal Way
 Kansas City, MO 64129
 (816) 921-8000
-Opened   – 1973/4/10
+Opened   - 1973/4/10
 Capacity – 37,903
 NationalLeague - NO
 AmericanLeague - YES
