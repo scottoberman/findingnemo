@@ -394,23 +394,23 @@ vertexIterator++;
 queue<string> Graph::PrimsAlgorithm(Vertex* startVertex, int& weight)
 {
 	vector<Vertex*> visitedVertices;
-	vector<Edge*> connectionsToTake;
-	vector<Edge*>::const_iterator connectionsIterator;
+    vector<Edge*> connectionsToTake;
+    vector<Edge*>::const_iterator connectionsIterator;
 	vector<Vertex*>::const_iterator vertexIterator;
 	Vertex* activeVertex = startVertex;
 	Edge* connectionToMoveAcross = NULL;
-	int totalDistance = 0;
+    int totalDistance = 0;
 
 	queue<string> MST;
 
 	visitedVertices.push_back(startVertex);
 
-	vertexIterator = visitedVertices.begin();
-	connectionsIterator = (*visitedVertices.begin())->connections.begin();
+    vertexIterator = visitedVertices.begin();
+    connectionsIterator = (*visitedVertices.begin())->connections.begin();
 
 	// While not every single vertex has been added to the MST, keep looking for a short edge.
 	while (visitedVertices.size() != vertices.size())
-	{
+    {
 		// While we have not examined every vertex visited for a short edge, keep searching.
 		while (vertexIterator != visitedVertices.end())
 		{
@@ -425,7 +425,7 @@ queue<string> Graph::PrimsAlgorithm(Vertex* startVertex, int& weight)
 					activeVertex = (*vertexIterator);
 				}
 				connectionsIterator++;
-			}
+            }
 			vertexIterator++;
 
 		}

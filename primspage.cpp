@@ -9,8 +9,8 @@ primsPage::primsPage(QWidget *parent) :
 {
     ui->setupUi(this);
     int weight = 0;
-   // graph.PrimsAlgorithm("Angels Stadium of Anaheim",weight);
-    ui->prims->setText(QString::number(6810));
+   graph.PrimsAlgorithm("Angels Stadium of Anaheim",weight);
+   // ui->prims->setText(QString::number(6810));
 }
 
 primsPage::~primsPage()
